@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PriInfo>
+  <PriHeader>
+    <WindowsEnvironment checksum="0" version="1.0" />
+    <AutoMerge>false</AutoMerge>
+  </PriHeader>
+  <QualifierInfo>
+    <Qualifiers>
+      <Qualifier index="1" scoreAsDefault="0.0" priority="900" value="EN" name="Language" />
+      <Qualifier index="2" scoreAsDefault="0.0" priority="900" value="IT" name="Language" />
+      <Qualifier index="3" scoreAsDefault="0.0" priority="900" value="QPS-PLOC" name="Language" />
+    </Qualifiers>
+    <QualifierSets>
+      <QualifierSet index="1">
+        <Qualifier index="1" scoreAsDefault="0.0" priority="900" value="EN" name="Language" />
+      </QualifierSet>
+      <QualifierSet index="2">
+        <Qualifier index="2" scoreAsDefault="0.0" priority="900" value="IT" name="Language" />
+      </QualifierSet>
+      <QualifierSet index="3">
+        <Qualifier index="3" scoreAsDefault="0.0" priority="900" value="QPS-PLOC" name="Language" />
+      </QualifierSet>
+    </QualifierSets>
+    <Decisions />
+  </QualifierInfo>
+  <ResourceMap name="GeographicCalculator" primary="true">
+    <VersionInfo version="1.0" />
+  </ResourceMap>
+</PriInfo>
