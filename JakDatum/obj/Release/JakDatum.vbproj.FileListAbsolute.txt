@@ -1,0 +1,13 @@
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakDatum\bin\Release\JakDatum.dll
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakDatum\bin\Release\JakDatum.pdb
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakDatum\bin\Release\JakDatum.xml
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakDatum\bin\Release\JakMathLib.dll
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakDatum\bin\Release\JakStringFormats.dll
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakDatum\bin\Release\JakMathLib.pdb
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakDatum\bin\Release\JakMathLib.xml
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakDatum\bin\Release\JakStringFormats.pdb
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakDatum\bin\Release\JakStringFormats.xml
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakDatum\obj\Release\JakDatum.vbprojResolveAssemblyReference.cache
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakDatum\obj\Release\JakDatum.dll
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakDatum\obj\Release\JakDatum.xml
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakDatum\obj\Release\JakDatum.pdb

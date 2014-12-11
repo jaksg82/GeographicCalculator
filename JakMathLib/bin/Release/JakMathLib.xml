@@ -1,0 +1,33 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+JakMathLib
+</name>
+</assembly>
+<members>
+<member name="M:JakMathLib.JakMathLib.CalcHeading(System.Double,System.Double,System.Double,System.Double)">
+	<summary>
+ Calculate the heading of the line to join the two given point
+ </summary>
+	<param name="Point1X">Start point X</param>
+	<param name="Point1Y">Start point Y</param>
+	<param name="Point2X">End point X</param>
+	<param name="Point2Y">End point Y</param>
+	<returns>Heading value in radians</returns>
+	<remarks>VB Math reference system</remarks>
+</member><member name="M:JakMathLib.JakMathLib.RangeBearing(System.Double,System.Double,System.Double,System.Double,System.Double@,System.Double@)">
+	<summary>
+ Calculate the coordinate of a point from the given point.
+ </summary>
+	<param name="StartPointX">Start point X</param>
+	<param name="StartPointY">Start point Y</param>
+	<param name="Range">Distance between start point and end point</param>
+	<param name="BearingR">Bearing in radians between start point and end point</param>
+	<param name="EndPointX">Computed End point X</param>
+	<param name="EndPointY">Computed End point y</param>
+	<returns>Successful computation</returns>
+	<remarks>Bearing as cartographic reference system</remarks>
+</member>
+</members>
+</doc>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="86c806a6-3f7a-478b-abc6-50d5addfd5fd" version="1.0" primary="true">
+		<Qualifiers>
+			<Language>EN-US</Language>
+			<Scale>240</Scale>
+			<Theme>LIGHT, DARK</Theme>
+		</Qualifiers>
+		<ResourceMapSubtree name="Files">
+			<NamedResource name="App.xbf" uri="ms-resource://86c806a6-3f7a-478b-abc6-50d5addfd5fd/Files/App.xbf">
+				<Candidate type="Path">
+					<Value>App.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="GeographicCalculator_WP.xr.xml" uri="ms-resource://86c806a6-3f7a-478b-abc6-50d5addfd5fd/Files/GeographicCalculator_WP.xr.xml">
+				<Candidate type="Path">
+					<Value>GeographicCalculator_WP.xr.xml</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="MainPage_WP.xbf" uri="ms-resource://86c806a6-3f7a-478b-abc6-50d5addfd5fd/Files/MainPage_WP.xbf">
+				<Candidate type="Path">
+					<Value>MainPage_WP.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="SrcSetPage_WP.xbf" uri="ms-resource://86c806a6-3f7a-478b-abc6-50d5addfd5fd/Files/SrcSetPage_WP.xbf">
+				<Candidate type="Path">
+					<Value>SrcSetPage_WP.xbf</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="Assets">
+				<NamedResource name="DarkGray.png" uri="ms-resource://86c806a6-3f7a-478b-abc6-50d5addfd5fd/Files/Assets/DarkGray.png">
+					<Candidate type="Path">
+						<Value>Assets\DarkGray.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="HubBackground.png" uri="ms-resource://86c806a6-3f7a-478b-abc6-50d5addfd5fd/Files/Assets/HubBackground.png">
+					<Candidate qualifiers="Theme-LIGHT" isDefault="true" type="Path">
+						<Value>Assets\HubBackground.theme-light.png</Value>
+					</Candidate>
+					<Candidate qualifiers="Theme-DARK" isDefault="true" type="Path">
+						<Value>Assets\HubBackground.theme-dark.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="LightGray.png" uri="ms-resource://86c806a6-3f7a-478b-abc6-50d5addfd5fd/Files/Assets/LightGray.png">
+					<Candidate type="Path">
+						<Value>Assets\LightGray.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Logo.png" uri="ms-resource://86c806a6-3f7a-478b-abc6-50d5addfd5fd/Files/Assets/Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="MediumGray.png" uri="ms-resource://86c806a6-3f7a-478b-abc6-50d5addfd5fd/Files/Assets/MediumGray.png">
+					<Candidate type="Path">
+						<Value>Assets\MediumGray.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SmallLogo.png" uri="ms-resource://86c806a6-3f7a-478b-abc6-50d5addfd5fd/Files/Assets/SmallLogo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\SmallLogo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="SplashScreen.png" uri="ms-resource://86c806a6-3f7a-478b-abc6-50d5addfd5fd/Files/Assets/SplashScreen.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\SplashScreen.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="Square71x71Logo.png" uri="ms-resource://86c806a6-3f7a-478b-abc6-50d5addfd5fd/Files/Assets/Square71x71Logo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\Square71x71Logo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="StoreLogo.png" uri="ms-resource://86c806a6-3f7a-478b-abc6-50d5addfd5fd/Files/Assets/StoreLogo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\StoreLogo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+				<NamedResource name="WideLogo.png" uri="ms-resource://86c806a6-3f7a-478b-abc6-50d5addfd5fd/Files/Assets/WideLogo.png">
+					<Candidate qualifiers="Scale-240" isDefault="true" type="Path">
+						<Value>Assets\WideLogo.scale-240.png</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Common">
+				<NamedResource name="ReadMe.txt" uri="ms-resource://86c806a6-3f7a-478b-abc6-50d5addfd5fd/Files/Common/ReadMe.txt">
+					<Candidate type="Path">
+						<Value>Common\ReadMe.txt</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="DataModel">
+				<NamedResource name="SampleData.json" uri="ms-resource://86c806a6-3f7a-478b-abc6-50d5addfd5fd/Files/DataModel/SampleData.json">
+					<Candidate type="Path">
+						<Value>DataModel\SampleData.json</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+		<ResourceMapSubtree name="Resources">
+			<NamedResource name="HubSection1" uri="ms-resource://86c806a6-3f7a-478b-abc6-50d5addfd5fd/Resources/HubSection1">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>SECTION 1</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="HubSection2" uri="ms-resource://86c806a6-3f7a-478b-abc6-50d5addfd5fd/Resources/HubSection2">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>SECTION 2</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="HubSection3" uri="ms-resource://86c806a6-3f7a-478b-abc6-50d5addfd5fd/Resources/HubSection3">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>SECTION 3</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="HubSection4" uri="ms-resource://86c806a6-3f7a-478b-abc6-50d5addfd5fd/Resources/HubSection4">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>SECTION 4</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="HubSection5" uri="ms-resource://86c806a6-3f7a-478b-abc6-50d5addfd5fd/Resources/HubSection5">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>SECTION 5</Value>
+				</Candidate>
+			</NamedResource>
+			<NamedResource name="NavigationFailedExceptionMessage" uri="ms-resource://86c806a6-3f7a-478b-abc6-50d5addfd5fd/Resources/NavigationFailedExceptionMessage">
+				<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+					<Value>Navigation failed.</Value>
+				</Candidate>
+			</NamedResource>
+			<ResourceMapSubtree name="Header">
+				<NamedResource name="Text" uri="ms-resource://86c806a6-3f7a-478b-abc6-50d5addfd5fd/Resources/Header/Text">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>application name</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+			<ResourceMapSubtree name="Hub">
+				<NamedResource name="Header" uri="ms-resource://86c806a6-3f7a-478b-abc6-50d5addfd5fd/Resources/Hub/Header">
+					<Candidate qualifiers="Language-EN-US" isDefault="true" type="String">
+						<Value>application name</Value>
+					</Candidate>
+				</NamedResource>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

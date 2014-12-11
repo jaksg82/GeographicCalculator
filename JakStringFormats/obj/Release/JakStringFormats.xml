@@ -1,0 +1,109 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+JakStringFormats
+</name>
+</assembly>
+<members>
+<member name="M:JakStringFormats.Formattings.ListDmsFormats(System.String[]@)">
+	<summary>
+ Create an array of angle formatting strings
+ </summary>
+	<param name="FormatArray">Array of strings</param>
+	<returns>Number of formats available</returns>
+	<remarks></remarks>
+</member><member name="M:JakStringFormats.Formattings.ListDmsSigns(System.String[]@)">
+	<summary>
+ Create an array of angle formatting strings
+ </summary>
+	<param name="FormatArray">Array of strings</param>
+	<returns>Number of formats available</returns>
+	<remarks></remarks>
+</member><member name="M:JakStringFormats.Formattings.ListMetricSigns(System.String[]@)">
+	<summary>
+ Create an array of metric coordinates formatting strings
+ </summary>
+	<param name="SignArray">Array of strings</param>
+	<returns>Number of formats available</returns>
+	<remarks></remarks>
+</member><member name="M:JakStringFormats.Formattings.FormatNumber(System.Double,System.Int32,System.Int32)">
+	<summary>
+ Convert a number in to string representation with given decimals
+ </summary>
+	<param name="Value">The value to convert</param>
+	<param name="Decimals">Quantity of numbers after the decimal point</param>
+	<param name="LeaderPaddings">Quantity of numbers before the decimal point</param>
+	<returns>String representation of the given value</returns>
+	<remarks></remarks>
+</member><member name="M:JakStringFormats.Formattings.DmsParse(System.String,JakStringFormats.Formattings.DmsFormat,JakStringFormats.Formattings.DmsSign,System.Boolean)">
+	<summary>
+ Retrieve the angular value from a formatted string
+ </summary>
+	<param name="AngleString">Formatted string to parse</param>
+	<param name="AngleFormat">Expected angle format</param>
+	<param name="SignFormat">Expected sign format</param>
+	<param name="AsRadians">True to have the result in radians, False for degrees</param>
+	<returns>Parsed angle</returns>
+	<remarks></remarks>
+</member><member name="M:JakStringFormats.Formattings.FormatDMS(System.Double,JakStringFormats.Formattings.DmsFormat,JakStringFormats.Formattings.DmsSign,System.Int32,System.Boolean)">
+	<summary>
+ Convert the degree value in a formatted geographic coordinate string
+ </summary>
+	<param name="AngleR">Latitude or Longitude value</param>
+	<param name="AngleFormat">Format for the numbers</param>
+	<param name="SignFormat">Format for the sign</param>
+	<param name="Decimals">Decimal places</param>
+	<param name="IsLat">True for Latitude, False for Longitude values</param>
+	<returns>Formatted String</returns>
+	<remarks></remarks>
+</member><member name="M:JakStringFormats.Formattings.MetricParse(System.String,JakStringFormats.Formattings.MetricSign)">
+	<summary>
+ Retrieve the metric value from a formatted string
+ </summary>
+	<param name="MetricString">Text to be parsed</param>
+	<param name="MetricFormat">Expected format</param>
+	<returns>Parsed value</returns>
+	<remarks></remarks>
+</member><member name="M:JakStringFormats.Formattings.FormatMetric(System.Double,JakStringFormats.Formattings.MetricSign,System.Int32,System.Boolean)">
+	<summary>
+ Convert the metric value in a formatted coordinate string
+ </summary>
+	<param name="MetricCoord">East or North coordinate</param>
+	<param name="MetricFormat">Format for the numbers</param>
+	<param name="Decimals">Decimal places</param>
+	<param name="IsNorth">True for North, False for East values</param>
+	<returns>Formatted string</returns>
+	<remarks></remarks>
+</member><member name="M:JakStringFormats.Formattings.FormatPosixTime(System.DateTime)">
+	<summary>
+ Convert the date value in to Posix value
+ </summary>
+	<param name="InDateTime">Input Date value</param>
+	<returns>Converted Posix value</returns>
+	<remarks></remarks>
+</member><member name="M:JakStringFormats.Formattings.ParsePosixTime(System.Double)">
+	<summary>
+ Convert Posix value in to a Date value
+ </summary>
+	<param name="InPosixTime">Input Posix value</param>
+	<returns>Converted Date value</returns>
+	<remarks></remarks>
+</member><member name="M:JakStringFormats.Formattings.CountCharacter(System.String,System.Char)">
+	<summary>
+ Count the occurrences of a given char inside a string
+ </summary>
+	<param name="value">Input String</param>
+	<param name="ch">Char to count</param>
+	<returns>Number of char found</returns>
+	<remarks></remarks>
+</member><member name="M:JakStringFormats.Formattings.DeleteExtraSpaceChar(System.String)">
+	<summary>
+ Delete duplicated spaces inside the given string
+ </summary>
+	<param name="OriginalString">Input String</param>
+	<returns>Cleaned String</returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

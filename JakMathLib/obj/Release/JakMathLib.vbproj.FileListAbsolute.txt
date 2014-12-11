@@ -1,0 +1,6 @@
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakMathLib\bin\Release\JakMathLib.dll
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakMathLib\bin\Release\JakMathLib.pdb
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakMathLib\bin\Release\JakMathLib.xml
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakMathLib\obj\Release\JakMathLib.dll
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakMathLib\obj\Release\JakMathLib.xml
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakMathLib\obj\Release\JakMathLib.pdb

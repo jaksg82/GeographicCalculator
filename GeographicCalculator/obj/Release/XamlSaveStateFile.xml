@@ -1,0 +1,10 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="c:\users\simone\dropbox\progetti windows8\geographiccalculator\geographiccalculator\obj\release\intermediatexaml\geographiccalculator.exe" HashGuid="b51c59a5-db23-bf02-df23-739d18473b32" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\msadvertisingxaml\8.1\references\commonconfiguration\neutral\microsoft.advertising.winrt.ui.winmd" HashGuid="e2e1868b-6ac9-03b1-ca83-3c4740a6cdfb" />
+    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\msadvertisingxaml\8.1\references\commonconfiguration\neutral\microsoftadvertising.winmd" HashGuid="ff7acc79-1a32-fd80-27f3-998d24e2b25e" />
+    <ReferenceAssembly PathName="c:\users\simone\dropbox\progetti windows8\geographiccalculator\jakdatum\bin\release\jakdatum.dll" HashGuid="07e3e2af-37d6-7622-6357-40be7ebfa7c4" />
+    <ReferenceAssembly PathName="c:\users\simone\dropbox\progetti windows8\geographiccalculator\jakmathlib\bin\release\jakmathlib.dll" HashGuid="3c1b0c46-009f-ead9-23f3-800dec3c41c1" />
+    <ReferenceAssembly PathName="c:\users\simone\dropbox\progetti windows8\geographiccalculator\jakstringformats\bin\release\jakstringformats.dll" HashGuid="b6ff49d7-2f06-e0fc-d8a9-db9e47de16ec" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

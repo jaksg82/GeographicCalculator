@@ -1,0 +1,6 @@
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\GeographicCalculator_WP.vbproj;neutral
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakDatum\JakDatum.vbproj;neutral
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakMathLib\JakMathLib.vbproj;neutral
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakMathLib\JakMathLib.vbproj;neutral
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakStringFormats\JakStringFormats.vbproj;neutral
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakStringFormats\JakStringFormats.vbproj;neutral
