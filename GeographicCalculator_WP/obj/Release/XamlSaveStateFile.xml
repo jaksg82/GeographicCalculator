@@ -3,6 +3,6 @@
     <LocalAssembly PathName="c:\users\simone\dropbox\progetti windows8\geographiccalculator\geographiccalculator_wp\obj\release\intermediatexaml\geographiccalculator_wp.exe" HashGuid="b842c046-7cde-fc1d-3915-3b3ff154a941" />
     <ReferenceAssembly PathName="c:\users\simone\dropbox\progetti windows8\geographiccalculator\jakdatum\bin\release\jakdatum.dll" HashGuid="07e3e2af-37d6-7622-6357-40be7ebfa7c4" />
     <ReferenceAssembly PathName="c:\users\simone\dropbox\progetti windows8\geographiccalculator\jakmathlib\bin\release\jakmathlib.dll" HashGuid="3c1b0c46-009f-ead9-23f3-800dec3c41c1" />
-    <ReferenceAssembly PathName="c:\users\simone\dropbox\progetti windows8\geographiccalculator\jakstringformats\bin\release\jakstringformats.dll" HashGuid="b6ff49d7-2f06-e0fc-d8a9-db9e47de16ec" />
+    <ReferenceAssembly PathName="c:\users\simone\dropbox\progetti windows8\geographiccalculator\jakstringformats\bin\release\jakstringformats.dll" HashGuid="1ec3a4d3-fa21-e541-cb1e-068b729742ab" />
   </ReferenceAssemblyList>
 </XamlCompilerSaveState>

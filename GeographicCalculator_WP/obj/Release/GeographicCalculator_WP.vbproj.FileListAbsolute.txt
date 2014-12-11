@@ -1,4 +1,3 @@
-C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\bin\Release\Assets\HubBackground.theme-dark.png
 C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\bin\Release\App.xbf
 C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\bin\Release\GeographicCalculator_WP.xr.xml
 C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\bin\Release\GeographicCalculator_WP.exe

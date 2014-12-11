@@ -28,43 +28,64 @@
     <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakStringFormats\bin\Release\JakStringFormats.dll">
       <PackagePath>JakStringFormats.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\Assets\DarkGray.png">
-      <PackagePath>Assets\DarkGray.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\Assets\LightGray.png">
-      <PackagePath>Assets\LightGray.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\Assets\MediumGray.png">
-      <PackagePath>Assets\MediumGray.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\Assets\HubBackground.theme-dark.png">
-      <PackagePath>Assets\HubBackground.theme-dark.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\Assets\HubBackground.theme-light.png">
-      <PackagePath>Assets\HubBackground.theme-light.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\Assets\Logo.scale-240.png">
-      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\Assets\SmallLogo.scale-240.png">
-      <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\Assets\SplashScreen.scale-140.png">
+      <PackagePath>Assets\SplashScreen.scale-140.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\Assets\SplashScreen.scale-240.png">
       <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\Assets\Square150x150Logo.scale-140.png">
+      <PackagePath>Assets\Square150x150Logo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\Assets\Square150x150Logo.scale-240.png">
+      <PackagePath>Assets\Square150x150Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\Assets\Square44x44Logo.scale-140.png">
+      <PackagePath>Assets\Square44x44Logo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\Assets\Square44x44Logo.scale-240.png">
+      <PackagePath>Assets\Square44x44Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\Assets\Square71x71Logo.scale-100.png">
+      <PackagePath>Assets\Square71x71Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\Assets\Square71x71Logo.scale-140.png">
+      <PackagePath>Assets\Square71x71Logo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\Assets\Square71x71Logo.scale-240.png">
       <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\Assets\StoreLogo.scale-240.png">
-      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\Assets\WideLogo.scale-240.png">
-      <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\Assets\StoreLogo.scale-140.png">
+      <PackagePath>Assets\StoreLogo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\Assets\StoreLogo.scale-240.png">
+      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\Common\ReadMe.txt">

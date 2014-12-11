@@ -372,7 +372,7 @@ Public NotInheritable Class SrcSetPageVB
         CrsString = SavedCrs.ToString
 
         UpdateUI()
-
+        Me.Frame.Navigate(GetType(MainPage))
     End Sub
 
     Private Sub CancelButton_Click()

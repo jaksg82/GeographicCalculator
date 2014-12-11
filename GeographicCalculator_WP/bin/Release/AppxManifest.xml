@@ -23,9 +23,9 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="GeographicCalculator_WP.exe" EntryPoint="GeographicCalculator_WP.App">
-      <m3:VisualElements DisplayName="Geographic Calculator" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="GeographicCalculator_WP" ForegroundText="light" BackgroundColor="transparent" ToastCapable="false">
-        <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png"></m3:DefaultTile>
-        <m3:SplashScreen Image="Assets\SplashScreen.png" />
+      <m3:VisualElements DisplayName="Geographic Calculator" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png" Description="GeographicCalculator_WP" ForegroundText="light" BackgroundColor="transparent" ToastCapable="false">
+        <m3:DefaultTile Square71x71Logo="Assets\Square71x71Logo.png"></m3:DefaultTile>
+        <m3:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="transparent" />
         <m3:InitialRotationPreference>
           <m3:Rotation Preference="portrait" />
         </m3:InitialRotationPreference>
@@ -40,8 +40,9 @@
     <build:Item Name="VisualStudio" Version="12.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Express 2013 for Windows" />
     <build:Item Name="OperatingSystem" Version="6.3.9600.16384 (winblue_rtm.130821-1623)" />
-    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="12.0.30501.0" />
+    <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="12.0.31101.0" />
+    <build:Item Name="ProjectGUID" Value="{677B203A-5700-4487-A25A-2E2DB754070A}" />
     <build:Item Name="Microsoft.Windows.UI.Xaml.Build.Tasks.dll" Version="12.0.30501.0" />
-    <build:Item Name="MakePri.exe" Version="6.3.9600.17029 (winblue_gdr.140219-1702)" />
+    <build:Item Name="MakePri.exe" Version="6.3.9600.17298 (winblue.141024-1500)" />
   </build:Metadata>
 </Package>

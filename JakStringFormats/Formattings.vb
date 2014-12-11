@@ -121,7 +121,7 @@ Public Module Formattings
         Try
             IntegerPart = CInt(Math.Truncate(Value))
             DecimalMultiplier = CInt(Math.Pow(10.0, Decimals))
-            DecimalPart = CInt(Math.Round((Value - Math.Truncate(Value)) * DecimalMultiplier))
+            DecimalPart = Math.Abs(CInt(Math.Round((Value - Math.Truncate(Value)) * DecimalMultiplier)))
             TempString = IntegerPart.ToString
             If LeaderPaddings > TempString.Length Then
                 TempString = TempString.PadLeft(LeaderPaddings, CChar("0"))
