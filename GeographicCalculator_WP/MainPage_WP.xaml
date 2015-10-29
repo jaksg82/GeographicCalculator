@@ -45,9 +45,9 @@
     </Page.Resources>
     <Page.BottomAppBar>
         <CommandBar>
-            <AppBarButton x:Name="BtCrs1" Icon="Globe" Label="C.R.S.1"/>
-            <AppBarButton x:Name="BtCrs2" Icon="Globe" Label="C.R.S.2"/>
-            <AppBarButton x:Name="BtGps" Icon="Target" Label="Locate" />
+            <AppBarButton x:Name="BtCrs1" Icon="Globe" x:Uid="MainBarCrs1" Label="C.R.S.1"/>
+            <AppBarButton x:Name="BtCrs2" Icon="Globe" x:Uid="MainBarCrs2" Label="C.R.S.2"/>
+            <AppBarButton x:Name="BtGps" Icon="Target" x:Uid="MainBarLocate" Label="Locate" />
         </CommandBar>
     </Page.BottomAppBar>
 
@@ -87,18 +87,18 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <TextBlock x:Uid="UI_Main_InputTitle" Grid.Row="0" Text="Input Coordinates:" Style="{StaticResource CoordValue}" />
+                <TextBlock Grid.Row="0" x:Uid="MainInputTitle" Text="Input Coordinates:" Style="{StaticResource CoordValue}" />
                 <ComboBox x:Name="InputFormat" Grid.Row="1" Margin="2" FontSize="16">
-                    <ComboBoxItem Content="Projected meters"/>
-                    <ComboBoxItem Content="Geographic dd mm ss" IsSelected="True"/>
-                    <ComboBoxItem Content="Geographic dd mm" />
-                    <ComboBoxItem Content="Geographic dd"/>
+                    <ComboBoxItem x:Uid="MainInputMethodMeter" Content="Projected meters"/>
+                    <ComboBoxItem x:Uid="MainInputMethodDMS" Content="Geographic dd mm ss" IsSelected="True"/>
+                    <ComboBoxItem x:Uid="MainInputMethodDM" Content="Geographic dd mm" />
+                    <ComboBoxItem x:Uid="MainInputMethodD" Content="Geographic dd"/>
                 </ComboBox>
-                <TextBlock x:Uid="UI_Main_Longitude" Text="Longitude:" Grid.Row="2" Style="{StaticResource CoordValue}" />
+                <TextBlock x:Uid="MainInputLongitude" Text="Longitude:" Grid.Row="2" Style="{StaticResource CoordValue}" />
                 <TextBox x:Name="InputX" Margin="2" Grid.Row="3" InputScope="TelephoneNumber" Style="{StaticResource CoordInput}" />
-                <TextBlock x:Uid="UI_Main_Latitude" Text="Latitude:" Grid.Row="4" Style="{StaticResource CoordValue}" />
+                <TextBlock x:Uid="MainInputLatitude" Text="Latitude:" Grid.Row="4" Style="{StaticResource CoordValue}" />
                 <TextBox x:Name="InputY" Margin="2" Grid.Row="5" InputScope="TelephoneNumber"  Style="{StaticResource CoordInput}" />
-                <TextBlock x:Uid="UI_Main_Elevation" Text="Elevation:" Grid.Row="6" Style="{StaticResource CoordValue}" />
+                <TextBlock x:Uid="MainInputElevation" Text="Elevation:" Grid.Row="6" Style="{StaticResource CoordValue}" />
                 <TextBox x:Name="InputZ" Margin="2" Grid.Row="7" InputScope="TelephoneNumber" Style="{StaticResource CoordInput}" />
             </Grid>
 

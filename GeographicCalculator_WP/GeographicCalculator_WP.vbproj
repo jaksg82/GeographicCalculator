@@ -96,10 +96,6 @@
     <WarningsAsErrors>41999,42016,42017,42018,42019,42020,42021,42022,42032,42036</WarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
-    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <PRIResource Include="Strings\en-US\Resources.resw" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="App.xaml.vb">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -107,7 +103,6 @@
     <Compile Include="Common\ObservableDictionary.vb" />
     <Compile Include="Common\RelayCommand.vb" />
     <Compile Include="Common\SuspensionManager.vb" />
-    <Compile Include="DataModel\SampleDataSource.vb" />
     <Compile Include="MainPage_WP.xaml.vb">
       <DependentUpon>MainPage_WP.xaml</DependentUpon>
     </Compile>
@@ -192,9 +187,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DataModel\SampleData.json" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\JakDatum\JakDatum.vbproj">
       <Project>{e5064277-a550-4380-b722-1dab6f330a71}</Project>
       <Name>JakDatum</Name>
@@ -207,6 +199,10 @@
       <Project>{fb199fba-0ad3-4ada-91f4-e41435dcb3cb}</Project>
       <Name>JakStringFormats</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <PRIResource Include="Strings\en-US\Resources.resw" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>

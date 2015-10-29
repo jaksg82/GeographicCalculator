@@ -8,6 +8,7 @@
     xmlns:common="using:GeographicCalculator_WP.Common"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:strings="clr-namespace:GeographicCalculator_WP.Resources"
     mc:Ignorable="d">
 
     <Page.Resources>
@@ -37,8 +38,8 @@
     </Page.Resources>
     <Page.BottomAppBar>
         <CommandBar>
-            <AppBarButton x:Name="AcceptButton" Icon="Accept" Label="Apply" Click="AcceptButton_Click" />
-            <AppBarButton x:Name="CancelButton" Icon="Cancel" Label="Discard" Click="CancelButton_Click" />
+            <AppBarButton x:Name="AcceptButton" Icon="Accept" x:Uid="SettingAccept" Label="Accept" Click="AcceptButton_Click" />
+            <AppBarButton x:Name="CancelButton" Icon="Cancel" x:Uid="SettingCancel" Label="Discard" Click="CancelButton_Click" />
         </CommandBar>
     </Page.BottomAppBar>
 
@@ -69,47 +70,47 @@
         <ListView x:Name="ListPanels" Grid.Row="1" Margin="10,0,10,10" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False" SelectionMode="None">
             <StackPanel x:Name="ListPrjPanel" Margin="0" Width="{Binding ActualWidth, ElementName=ListPanels, Mode=OneWay}">
                 <!-- Section 1 header -->
-                <TextBlock  x:Name="ListPrjTitle" Style="{StaticResource SectionHeader}" Text="Source Projection" />
+                <TextBlock  x:Name="ListPrjTitle" x:Uid="SettingPrjTitle" Text="Source Projection" Style="{StaticResource SectionHeader}" />
                 <!-- Section 1 body -->
-                <TextBlock Text="Projection Name:" Style="{StaticResource ValueDescription}" />
+                <TextBlock x:Uid="SettingPrjName" Text="Projection Name:" Style="{StaticResource ValueDescription}" />
                 <TextBlock x:Name="ListSrcPrjFnameOut" Style="{StaticResource ValueNotEditable}" />
                 <TextBox x:Name="ListSrcPrjFnameIn" />
-                <TextBlock Text="Short Name (Max 12 char):" Style="{StaticResource ValueDescription}" />
+                <TextBlock x:Uid="SettingPrjShortName" Text="Short Name (Max 12 char):" Style="{StaticResource ValueDescription}" />
                 <TextBlock x:Name="ListSrcPrjSnameOut" Style="{StaticResource ValueNotEditable}" />
                 <TextBox x:Name="ListSrcPrjSnameIn" />
-                <TextBlock Text="Projection Method:" Style="{StaticResource ValueDescription}" />
+                <TextBlock x:Uid="SettingPrjMethod" Text="Projection Method:" Style="{StaticResource ValueDescription}" />
                 <ComboBox x:Name="ListSrcPrjMethod">
-                    <ComboBoxItem Content="Universal Transverse of Mercator" />
-                    <ComboBoxItem Content="Transverse of Mercator" />
-                    <ComboBoxItem Content="Direct of Mercator" />
-                    <ComboBoxItem Content="Lambert Conformal Conical (1 standard parallel)" />
-                    <ComboBoxItem Content="Lambert Conformal Conical (2 standard parallels)" />
+                    <ComboBoxItem x:Uid="SettingPrjMethodItemUTM" Content="UTM" />
+                    <ComboBoxItem x:Uid="SettingPrjMethodItemTMerc" Content="TM" />
+                    <ComboBoxItem x:Uid="SettingPrjMethodItemMerc" Content="Merc" />
+                    <ComboBoxItem x:Uid="SettingPrjMethodItemLCC1" Content="LCC1" />
+                    <ComboBoxItem x:Uid="SettingPrjMethodItemLCC2" Content="LCC2" />
                 </ComboBox>
-                <TextBlock x:Name="ListSrcUtmZoneTitle" Text="UTM Zone:" Style="{StaticResource ValueDescription}" />
+                <TextBlock x:Name="ListSrcUtmZoneTitle" x:Uid="SettingPrjUtmZone" Text="UTM Zone:" Style="{StaticResource ValueDescription}" />
                 <TextBlock x:Name="ListSrcUtmZoneOut" Style="{StaticResource ValueNotEditable}" />
                 <ComboBox x:Name="ListSrcUtmZoneIn" />
-                <TextBlock x:Name="ListSrcUtmHemiTitle" Text="UTM Hemisphere:" Style="{StaticResource ValueDescription}" />
+                <TextBlock x:Name="ListSrcUtmHemiTitle" x:Uid="SettingPrjUtmHemi" Text="UTM Hemisphere:" Style="{StaticResource ValueDescription}" />
                 <ToggleSwitch x:Name="ListSrcUtmHemiIn" OffContent="South" OnContent="North" HorizontalAlignment="Stretch" HorizontalContentAlignment="Stretch" />
                 <TextBlock x:Name="ListSrcUtmHemiOut" Style="{StaticResource ValueNotEditable}" />
-                <TextBlock x:Name="ListSrcLon0Title" Text="Longitude of Origin:" Style="{StaticResource ValueDescription}" />
+                <TextBlock x:Name="ListSrcLon0Title" x:Uid="SettingPrjUtmOriginLongitude" Text="Longitude of Origin:" Style="{StaticResource ValueDescription}" />
                 <TextBlock x:Name="ListSrcLon0Out" Style="{StaticResource ValueNotEditable}" />
                 <TextBox x:Name="ListSrcLon0In" TextAlignment="Right" />
-                <TextBlock x:Name="ListSrcLat0Title" Text="Latitude of Origin:" Style="{StaticResource ValueDescription}" />
+                <TextBlock x:Name="ListSrcLat0Title" x:Uid="SettingPrjUtmOriginLatitude" Text="Latitude of Origin:" Style="{StaticResource ValueDescription}" />
                 <TextBlock x:Name="ListSrcLat0Out" Style="{StaticResource ValueNotEditable}" />
                 <TextBox x:Name="ListSrcLat0In" TextAlignment="Right" />
-                <TextBlock x:Name="ListSrcFalseXTitle" Text="False East at Origin:" Style="{StaticResource ValueDescription}" />
+                <TextBlock x:Name="ListSrcFalseXTitle" x:Uid="SettingPrjUtmFalseEast" Text="False East at Origin:" Style="{StaticResource ValueDescription}" />
                 <TextBlock x:Name="ListSrcFalseXOut" Style="{StaticResource ValueNotEditable}" />
                 <TextBox x:Name="ListSrcFalseXIn" />
-                <TextBlock x:Name="ListSrcFalseYTitle" Text="False North at Origin:" Style="{StaticResource ValueDescription}" />
+                <TextBlock x:Name="ListSrcFalseYTitle" x:Uid="SettingPrjUtmFalseNorth" Text="False North at Origin:" Style="{StaticResource ValueDescription}" />
                 <TextBlock x:Name="ListSrcFalseYOut" Style="{StaticResource ValueNotEditable}" />
                 <TextBox x:Name="ListSrcFalseYIn" />
-                <TextBlock x:Name="ListSrcScaleTitle" Text="Scale at Origin:" Style="{StaticResource ValueDescription}" />
+                <TextBlock x:Name="ListSrcScaleTitle" x:Uid="SettingPrjUtmOriginScale" Text="Scale at Origin:" Style="{StaticResource ValueDescription}" />
                 <TextBlock x:Name="ListSrcScaleOut" Style="{StaticResource ValueNotEditable}" />
                 <TextBox x:Name="ListSrcScaleIn" />
-                <TextBlock x:Name="ListSrcLat1Title" Text="Latitude of First Parallel:" Style="{StaticResource ValueDescription}" />
+                <TextBlock x:Name="ListSrcLat1Title" x:Uid="SettingPrjUtmFirstParallel" Text="Latitude of First Parallel:" Style="{StaticResource ValueDescription}" />
                 <TextBlock x:Name="ListSrcLat1Out" Style="{StaticResource ValueNotEditable}" />
                 <TextBox x:Name="ListSrcLat1In" TextAlignment="Right" />
-                <TextBlock x:Name="ListSrcLat2Title" Text="Latitude of Second Parallel:" Style="{StaticResource ValueDescription}" />
+                <TextBlock x:Name="ListSrcLat2Title" x:Uid="SettingPrjUtmSecondParallel" Text="Latitude of Second Parallel:" Style="{StaticResource ValueDescription}" />
                 <TextBlock x:Name="ListSrcLat2Out" Style="{StaticResource ValueNotEditable}" />
                 <TextBox x:Name="ListSrcLat2In" TextAlignment="Right" />
 
@@ -117,50 +118,55 @@
             <!-- Content Section Ellipsoid 1-->
             <StackPanel x:Name="ListEllPanel" Grid.Column="1" Width="{Binding ActualWidth, ElementName=ListPanels, Mode=OneWay}">
                 <!-- Section 1 header -->
-                <TextBlock x:Name="ListEllTitle" Style="{StaticResource SectionHeader}" Text="Source Ellipsoid" />
+                <TextBlock x:Name="ListEllTitle" x:Uid="SettingEllTitle" Style="{StaticResource SectionHeader}" Text="Source Ellipsoid" />
                 <!-- Section 1 body -->
-                <TextBlock Text="Ellipsoid Name:" Style="{StaticResource ValueDescription}" />
+                <TextBlock Text="Ellipsoid Name:" x:Uid="SettingEllName" Style="{StaticResource ValueDescription}" />
                 <ComboBox x:Name="ListSrcEllFname" />
-                <TextBlock Text="Short Name (Max 12 char):" Style="{StaticResource ValueDescription}" />
+                <TextBlock Text="Short Name (Max 12 char):" x:Uid="SettingEllShortName" Style="{StaticResource ValueDescription}" />
                 <TextBlock x:Name="ListSrcEllSname" Style="{StaticResource ValueNotEditable}" />
-                <TextBlock Text="Semi Mayor Axis:" Style="{StaticResource ValueDescription}" />
+                <TextBlock Text="Semi Mayor Axis:" x:Uid="SettingEllSemiMayorAxis" Style="{StaticResource ValueDescription}" />
                 <TextBlock x:Name="ListSrcEllSma" Style="{StaticResource ValueNotEditable}" />
-                <TextBlock Text="Inverse Flattening:" Style="{StaticResource ValueDescription}" />
+                <TextBlock Text="Inverse Flattening:" x:Uid="SettingEllInverseFlattening" Style="{StaticResource ValueDescription}" />
                 <TextBlock x:Name="ListSrcEllInvFlat" Style="{StaticResource ValueNotEditable}" />
-                <TextBlock Text="EPSG ID:" Style="{StaticResource ValueDescription}" />
+                <TextBlock Text="EPSG ID:" x:Uid="SettingEllEpsgId" Style="{StaticResource ValueDescription}" />
                 <TextBlock x:Name="ListSrcEllID" Style="{StaticResource ValueNotEditable}" />
             </StackPanel>
 
             <!-- Content Section Ellipsoid 1-->
             <StackPanel x:Name="ListDtmPanel" Grid.Column="2" Width="{Binding ActualWidth, ElementName=ListPanels, Mode=OneWay}">
                 <!-- Section 1 header -->
-                <TextBlock Style="{StaticResource SectionHeader}" Text="Parameters to WGS84" />
+                <TextBlock Style="{StaticResource SectionHeader}" x:Uid="SettingShiftTitle" Text="Parameters to WGS84" />
                 <!-- Section 1 body -->
-                <TextBlock Text="Transformation Method:" Style="{StaticResource ValueDescription}" />
-                <ComboBox x:Name="ListSrcDtmMethod" />
-                <TextBlock Text="Transformation Name:" Style="{StaticResource ValueDescription}" />
+                <TextBlock Text="Transformation Method:" x:Uid="SettingShiftMethod" Style="{StaticResource ValueDescription}" />
+                <ComboBox x:Name="ListSrcDtmMethod">
+                    <ComboBoxItem x:Uid="SettingShiftMethodItem3param" Content="Helmert3p" />
+                    <ComboBoxItem x:Uid="SettingShiftMethodItemV7param" Content="Vector7p" />
+                    <ComboBoxItem x:Uid="SettingShiftMethodItemF7param" Content="Frame7p" />
+                    <ComboBoxItem x:Uid="SettingShiftMethodItem10param" Content="MolBad" />
+                </ComboBox>    
+                <TextBlock Text="Transformation Name:" x:Uid="SettingShiftName" Style="{StaticResource ValueDescription}" />
                 <TextBox x:Name="ListSrcDtmFnameIn" TextAlignment="Right" />
-                <TextBlock Text="Short Name (Max 12 char):" Style="{StaticResource ValueDescription}" />
+                <TextBlock Text="Short Name (Max 12 char):" x:Uid="SettingShiftShortName" Style="{StaticResource ValueDescription}" />
                 <TextBox x:Name="ListSrcDtmSnameIn" TextAlignment="Right" />
-                <TextBlock Text="Delta X:" Style="{StaticResource ValueDescription}" />
+                <TextBlock Text="Delta X:" x:Uid="SettingShiftDX" Style="{StaticResource ValueDescription}" />
                 <TextBox x:Name="ListSrcDtmDX" />
-                <TextBlock Text="Delta Y:" Style="{StaticResource ValueDescription}" />
+                <TextBlock Text="Delta Y:" x:Uid="SettingShiftDY" Style="{StaticResource ValueDescription}" />
                 <TextBox x:Name="ListSrcDtmDY" />
-                <TextBlock Text="Delta Z:" Style="{StaticResource ValueDescription}" />
+                <TextBlock Text="Delta Z:" x:Uid="SettingShiftDZ" Style="{StaticResource ValueDescription}" />
                 <TextBox x:Name="ListSrcDtmDZ" />
-                <TextBlock x:Name="ListSrcDtmRXTitle" Text="Rotation X (Seconds of degree):" Style="{StaticResource ValueDescription}" />
+                <TextBlock x:Name="ListSrcDtmRXTitle" x:Uid="SettingShiftRX" Text="Rotation X (Seconds of degree):" Style="{StaticResource ValueDescription}" />
                 <TextBox x:Name="ListSrcDtmRX" />
-                <TextBlock x:Name="ListSrcDtmRYTitle" Text="Rotation Y (Seconds of degree):" Style="{StaticResource ValueDescription}" />
+                <TextBlock x:Name="ListSrcDtmRYTitle" x:Uid="SettingShiftRY" Text="Rotation Y (Seconds of degree):" Style="{StaticResource ValueDescription}" />
                 <TextBox x:Name="ListSrcDtmRY" />
-                <TextBlock x:Name="ListSrcDtmRZTitle" Text="Rotation Z (Seconds of degree):" Style="{StaticResource ValueDescription}" />
+                <TextBlock x:Name="ListSrcDtmRZTitle" x:Uid="SettingShiftRZ" Text="Rotation Z (Seconds of degree):" Style="{StaticResource ValueDescription}" />
                 <TextBox x:Name="ListSrcDtmRZ" />
-                <TextBlock x:Name="ListSrcDtmScaleTitle" Text="Scale Factor (PPM):" Style="{StaticResource ValueDescription}" />
+                <TextBlock x:Name="ListSrcDtmScaleTitle" x:Uid="SettingShiftScale" Text="Scale Factor (PPM):" Style="{StaticResource ValueDescription}" />
                 <TextBox x:Name="ListSrcDtmScale" />
-                <TextBlock x:Name="ListSrcDtmPXTitle" Text="Pivot Point X:" Style="{StaticResource ValueDescription}" />
+                <TextBlock x:Name="ListSrcDtmPXTitle" x:Uid="SettingShiftPX" Text="Pivot Point X:" Style="{StaticResource ValueDescription}" />
                 <TextBox x:Name="ListSrcDtmPX" />
-                <TextBlock x:Name="ListSrcDtmPYTitle" Text="Pivot Point Y:" Style="{StaticResource ValueDescription}" />
+                <TextBlock x:Name="ListSrcDtmPYTitle" x:Uid="SettingShiftPY" Text="Pivot Point Y:" Style="{StaticResource ValueDescription}" />
                 <TextBox x:Name="ListSrcDtmPY" />
-                <TextBlock x:Name="ListSrcDtmPZTitle" Text="Pivot point Z:" Style="{StaticResource ValueDescription}" />
+                <TextBlock x:Name="ListSrcDtmPZTitle" x:Uid="SettingShiftPZ" Text="Pivot point Z:" Style="{StaticResource ValueDescription}" />
                 <TextBox x:Name="ListSrcDtmPZ" />
             </StackPanel>
 

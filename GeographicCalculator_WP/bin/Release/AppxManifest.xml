@@ -7,7 +7,7 @@
 
     For more information on package manifest files, see http://go.microsoft.com/fwlink/?LinkID=241727
   -->
-  <Identity Name="86c806a6-3f7a-478b-abc6-50d5addfd5fd" Publisher="CN=Simone" Version="1.0.0.0" ProcessorArchitecture="neutral" />
+  <Identity Name="86c806a6-3f7a-478b-abc6-50d5addfd5fd" Publisher="CN=Simone" Version="1.0.0.1" ProcessorArchitecture="neutral" />
   <mp:PhoneIdentity PhoneProductId="86c806a6-3f7a-478b-abc6-50d5addfd5fd" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>GeographicCalculator_WP</DisplayName>

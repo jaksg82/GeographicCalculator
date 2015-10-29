@@ -4,4 +4,3 @@ C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakStringFormats\
 C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakStringFormats\obj\Release\JakStringFormats.dll
 C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakStringFormats\obj\Release\JakStringFormats.xml
 C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakStringFormats\obj\Release\JakStringFormats.pdb
-C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakStringFormats\obj\Release\JakStringFormats.vbprojResolveAssemblyReference.cache

@@ -117,28 +117,190 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Header.Text" xml:space="preserve">
-    <value>application name</value>
+  <data name="MainBarCrs1.Label" xml:space="preserve">
+    <value>C.R.S. 1</value>
   </data>
-  <data name="Hub.Header" xml:space="preserve">
-    <value>application name</value>
+  <data name="MainBarCrs2.Label" xml:space="preserve">
+    <value>C.R.S. 2</value>
   </data>
-  <data name="HubSection1" xml:space="preserve">
-    <value>SECTION 1</value>
+  <data name="MainBarLocate.Label" xml:space="preserve">
+    <value>Locate</value>
   </data>
-  <data name="HubSection2" xml:space="preserve">
-    <value>SECTION 2</value>
+  <data name="MainInputElevation.Text" xml:space="preserve">
+    <value>Elevation:</value>
   </data>
-  <data name="HubSection3" xml:space="preserve">
-    <value>SECTION 3</value>
+  <data name="MainInputLatitude.Text" xml:space="preserve">
+    <value>Latitude:</value>
   </data>
-  <data name="HubSection4" xml:space="preserve">
-    <value>SECTION 4</value>
+  <data name="MainInputLongitude.Text" xml:space="preserve">
+    <value>Longitude:</value>
   </data>
-  <data name="HubSection5" xml:space="preserve">
-    <value>SECTION 5</value>
+  <data name="MainInputMethodD.Content" xml:space="preserve">
+    <value>Geographic dd</value>
   </data>
-  <data name="NavigationFailedExceptionMessage" xml:space="preserve">
-    <value>Navigation failed.</value>
+  <data name="MainInputMethodDM.Content" xml:space="preserve">
+    <value>Geographic dd mm</value>
+  </data>
+  <data name="MainInputMethodDMS.Content" xml:space="preserve">
+    <value>Geographic dd mm ss</value>
+  </data>
+  <data name="MainInputMethodMeter.Content" xml:space="preserve">
+    <value>Projected meters</value>
+  </data>
+  <data name="MainInputTitle.Text" xml:space="preserve">
+    <value>Input Coordinates:</value>
+  </data>
+  <data name="SettingAccept.Label" xml:space="preserve">
+    <value>Accept</value>
+  </data>
+  <data name="SettingCancel.Label" xml:space="preserve">
+    <value>Discard</value>
+  </data>
+  <data name="SettingEllEpsgId.Text" xml:space="preserve">
+    <value>EPSG ID:</value>
+  </data>
+  <data name="SettingEllInverseFlattening.Text" xml:space="preserve">
+    <value>Inverse Flattening:</value>
+  </data>
+  <data name="SettingEllName.Text" xml:space="preserve">
+    <value>Ellipsoid Name:</value>
+  </data>
+  <data name="SettingEllSemiMayorAxis.Text" xml:space="preserve">
+    <value>Semi Mayor Axis:</value>
+  </data>
+  <data name="SettingEllShortName.Text" xml:space="preserve">
+    <value>Short Name (Max 12 char):</value>
+  </data>
+  <data name="SettingEllTitle.Text" xml:space="preserve">
+    <value>Source Ellipsoid</value>
+  </data>
+  <data name="SettingPrjFalseEast.Text" xml:space="preserve">
+    <value>False East at Origin:</value>
+  </data>
+  <data name="SettingPrjFalseNorth.Text" xml:space="preserve">
+    <value>False North at Origin:</value>
+  </data>
+  <data name="SettingPrjFirstParallel.Text" xml:space="preserve">
+    <value>Latitude of First Parallel:</value>
+  </data>
+  <data name="SettingPrjMethod.Text" xml:space="preserve">
+    <value>Projection Method:</value>
+  </data>
+  <data name="SettingPrjMethodItemLCC1.Content" xml:space="preserve">
+    <value>Lambert Conformal Conical (1 standard parallel)</value>
+  </data>
+  <data name="SettingPrjMethodItemLCC2.Content" xml:space="preserve">
+    <value>Lambert Conformal Conical (2 standard parallels)</value>
+  </data>
+  <data name="SettingPrjMethodItemMerc.Content" xml:space="preserve">
+    <value>Direct of Mercator</value>
+  </data>
+  <data name="SettingPrjMethodItemTMerc.Content" xml:space="preserve">
+    <value>Transverse of Mercator</value>
+  </data>
+  <data name="SettingPrjMethodItemUTM.Content" xml:space="preserve">
+    <value>Universal Transverse of Mercator</value>
+  </data>
+  <data name="SettingPrjName.Text" xml:space="preserve">
+    <value>Projection Name:</value>
+  </data>
+  <data name="SettingPrjOriginLatitude.Text" xml:space="preserve">
+    <value>Latitude of Origin:</value>
+  </data>
+  <data name="SettingPrjOriginLongitude.Text" xml:space="preserve">
+    <value>Longitude of Origin:</value>
+  </data>
+  <data name="SettingPrjOriginScale.Text" xml:space="preserve">
+    <value>Scale at Origin:</value>
+  </data>
+  <data name="SettingPrjSecondParallel.Text" xml:space="preserve">
+    <value>Latitude of Second Parallel:</value>
+  </data>
+  <data name="SettingPrjShortName.Text" xml:space="preserve">
+    <value>Short Name (Max 12 char):</value>
+  </data>
+  <data name="SettingPrjTitle.Text" xml:space="preserve">
+    <value>Projection settings</value>
+  </data>
+  <data name="SettingPrjUtmHemi.Text" xml:space="preserve">
+    <value>UTM Hemisphere:</value>
+  </data>
+  <data name="SettingPrjUtmZone.Text" xml:space="preserve">
+    <value>UTM Zone:</value>
+  </data>
+  <data name="SettingShiftDX.Text" xml:space="preserve">
+    <value>Delta X:</value>
+  </data>
+  <data name="SettingShiftDY.Text" xml:space="preserve">
+    <value>Delta Y:</value>
+  </data>
+  <data name="SettingShiftDZ.Text" xml:space="preserve">
+    <value>Delta Z:</value>
+  </data>
+  <data name="SettingShiftMethod.Text" xml:space="preserve">
+    <value>Transformation Method:</value>
+  </data>
+  <data name="SettingShiftMethodItem10param" xml:space="preserve">
+    <value>Molodensky-Badekas Transformation</value>
+  </data>
+  <data name="SettingShiftMethodItem3param" xml:space="preserve">
+    <value>Geocentric translation</value>
+  </data>
+  <data name="SettingShiftMethodItemF7param" xml:space="preserve">
+    <value>Coordinate Frame Rotation</value>
+  </data>
+  <data name="SettingShiftMethodItemV7param" xml:space="preserve">
+    <value>Position Vector Transformation</value>
+  </data>
+  <data name="SettingShiftName.Text" xml:space="preserve">
+    <value>Transformation Name:</value>
+  </data>
+  <data name="SettingShiftPX.Text" xml:space="preserve">
+    <value>Pivot Point X:</value>
+  </data>
+  <data name="SettingShiftPY.Text" xml:space="preserve">
+    <value>Pivot Point Y:</value>
+  </data>
+  <data name="SettingShiftPZ.Text" xml:space="preserve">
+    <value>Pivot Point Z:</value>
+  </data>
+  <data name="SettingShiftRX.Text" xml:space="preserve">
+    <value>Rotation X (Seconds of degree):</value>
+  </data>
+  <data name="SettingShiftRY.Text" xml:space="preserve">
+    <value>Rotation Y (Seconds of degree):</value>
+  </data>
+  <data name="SettingShiftRZ.Text" xml:space="preserve">
+    <value>Rotation Z (Seconds of degree):</value>
+  </data>
+  <data name="SettingShiftScale.Text" xml:space="preserve">
+    <value>Scale Factor (PPM):</value>
+  </data>
+  <data name="SettingShiftShortName.Text" xml:space="preserve">
+    <value>Short Name (Max 12 char):</value>
+  </data>
+  <data name="SettingShiftTitle.Text" xml:space="preserve">
+    <value>Parameters to WGS84</value>
+  </data>
+  <data name="SourceGeocentricTitle" xml:space="preserve">
+    <value>Source Geocentric:</value>
+  </data>
+  <data name="SourceGeographicTitle" xml:space="preserve">
+    <value>Source Geographic:</value>
+  </data>
+  <data name="SourceProjectedTitle" xml:space="preserve">
+    <value>Source Projected:</value>
+  </data>
+  <data name="TargetGeocentricTitle" xml:space="preserve">
+    <value>Target Geocentric:</value>
+  </data>
+  <data name="TargetGeographicTitle" xml:space="preserve">
+    <value>Target Geographic:</value>
+  </data>
+  <data name="TargetProjectedTitle" xml:space="preserve">
+    <value>Target Projected:</value>
+  </data>
+  <data name="WgsGeocentricTitle" xml:space="preserve">
+    <value>WGS84 Geocentric:</value>
   </data>
 </root>

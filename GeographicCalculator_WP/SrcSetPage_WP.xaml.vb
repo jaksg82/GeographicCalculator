@@ -113,10 +113,10 @@ Public NotInheritable Class SrcSetPageVB
             ListSrcEllFname.Items.Add(EpsgFname(l))
         Next
         'Populate the transformation combobox
-        Dim DtmNames() As String = TempCrs.EnumerateShiftingMethods()
-        For t = 0 To DtmNames.Count - 1
-            ListSrcDtmMethod.Items.Add(DtmNames(t))
-        Next
+        'Dim DtmNames() As String = TempCrs.EnumerateShiftingMethods()
+        'For t = 0 To DtmNames.Count - 1
+        '    ListSrcDtmMethod.Items.Add(DtmNames(t))
+        'Next
         pageSubTitle.Text = If(CrsID = "Crs1", "Source C.R.S.", "Target C.R.S.")
         UpdateUI()
         IsCrsUpdated = True

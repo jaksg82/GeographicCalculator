@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest" xmlns:m3="http://schemas.microsoft.com/appx/2014/manifest" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest">
-  <Identity Name="86c806a6-3f7a-478b-abc6-50d5addfd5fd" Publisher="CN=Simone" Version="1.0.0.0" />
+  <Identity Name="86c806a6-3f7a-478b-abc6-50d5addfd5fd" Publisher="CN=Simone" Version="1.0.0.1" />
   <mp:PhoneIdentity PhoneProductId="86c806a6-3f7a-478b-abc6-50d5addfd5fd" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>GeographicCalculator_WP</DisplayName>

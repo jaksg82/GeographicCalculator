@@ -19,12 +19,6 @@
     <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\bin\Release\GeographicCalculator.exe">
       <PackagePath>GeographicCalculator.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\References\CommonConfiguration\neutral\Microsoft.Advertising.WinRT.UI.winmd">
-      <PackagePath>Microsoft.Advertising.WinRT.UI.winmd</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\References\CommonConfiguration\neutral\MicrosoftAdvertising.winmd">
-      <PackagePath>MicrosoftAdvertising.winmd</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakDatum\bin\Release\JakDatum.dll">
       <PackagePath>JakDatum.dll</PackagePath>
     </AppxPackagedFile>
@@ -33,21 +27,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakStringFormats\bin\Release\JakStringFormats.dll">
       <PackagePath>JakStringFormats.dll</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\Redist\CommonConfiguration\neutral\Microsoft.Advertising.WinRT.UI\AdSettingsFlyout.xbf">
-      <PackagePath>Microsoft.Advertising.WinRT.UI\AdSettingsFlyout.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\Redist\CommonConfiguration\neutral\Microsoft.Advertising.WinRT.UI\Themes\Generic.xbf">
-      <PackagePath>Microsoft.Advertising.WinRT.UI\Themes\Generic.xbf</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\Redist\CommonConfiguration\neutral\Microsoft.Advertising.WinRT.UI\bootstrap.html">
-      <PackagePath>Microsoft.Advertising.WinRT.UI\bootstrap.html</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\Redist\CommonConfiguration\neutral\Microsoft.Advertising.WinRT.UI\mraidApi.html">
-      <PackagePath>Microsoft.Advertising.WinRT.UI\mraidApi.html</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\Redist\CommonConfiguration\neutral\Microsoft.Advertising.WinRT.UI\ormma.js">
-      <PackagePath>Microsoft.Advertising.WinRT.UI\ormma.js</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\Assets\BwSplash.scale-100.png">
       <PackagePath>Assets\BwSplash.scale-100.png</PackagePath>
@@ -190,11 +169,17 @@
     <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\bin\Release\NumericBox.xbf">
       <PackagePath>NumericBox.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\bin\Release\SingleNumericUpDown.xbf">
+      <PackagePath>SingleNumericUpDown.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\bin\Release\SrcSetPage.xbf">
       <PackagePath>SrcSetPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\bin\Release\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\bin\Release\Themes\Generic.xbf">
+      <PackagePath>Themes\Generic.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\bin\Release\GeographicCalculator.xr.xml">
       <PackagePath>GeographicCalculator.xr.xml</PackagePath>

@@ -91,9 +91,6 @@
     <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\Common\ReadMe.txt">
       <PackagePath>Common\ReadMe.txt</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\DataModel\SampleData.json">
-      <PackagePath>DataModel\SampleData.json</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator_WP\bin\Release\App.xbf">
       <PackagePath>App.xbf</PackagePath>
     </AppxPackagedFile>

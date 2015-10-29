@@ -51,15 +51,6 @@ Namespace Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo
             If typeIndex <> -1 Then
                 xamlType = CreateXamlType(typeIndex)
             End If
-            Dim userXamlType As Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType = TryCast(xamlType, Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType)
-            If xamlType Is Nothing Or (userXamlType IsNot Nothing AndAlso userXamlType.IsReturnTypeStub AndAlso Not userXamlType.IsLocalType) Then
-                Dim libXamlType As Global.Windows.UI.Xaml.Markup.IXamlType  = CheckOtherMetadataProvidersForType(type)
-                If libXamlType IsNot Nothing Then
-                    If libXamlType.IsConstructible Or xamlType Is Nothing
-                        xamlType = libXamlType
-                    End If
-                End If
-            End If
             If xamlType IsNot Nothing Then
                 _xamlTypeCacheByName.Add(xamlType.FullName, xamlType)
                 _xamlTypeCacheByType.Add(xamlType.UnderlyingType, xamlType)
@@ -78,15 +69,6 @@ Namespace Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo
             Dim typeIndex As Integer = LookupTypeIndexByName(typeName)
             if typeIndex <> -1 Then
                 xamlType = CreateXamlType(typeIndex)
-            End If
-            Dim userXamlType As Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType = TryCast(xamlType, Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType)
-            If xamlType Is Nothing Or (userXamlType IsNot Nothing AndAlso userXamlType.IsReturnTypeStub AndAlso Not userXamlType.IsLocalType) Then
-                Dim libXamlType As Global.Windows.UI.Xaml.Markup.IXamlType = CheckOtherMetadataProvidersForName(typeName)
-                If libXamlType IsNot Nothing Then
-                    If libXamlType.IsConstructible Or xamlType Is Nothing
-                        xamlType = libXamlType
-                    End If
-                End If
             End If
             if xamlType IsNot Nothing
                 _xamlTypeCacheByName.Add(xamlType.FullName, xamlType)
@@ -114,42 +96,40 @@ Namespace Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo
         Private _xamlTypeCacheByType As New Global.System.Collections.Generic.Dictionary(Of Global.System.Type, Global.Windows.UI.Xaml.Markup.IXamlType)()
         Private _xamlMembers As New Global.System.Collections.Generic.Dictionary(Of String, Global.Windows.UI.Xaml.Markup.IXamlMember)()
 
-        Private _typeNameTable(15) As String
-        Private _typeTable(15) As Global.System.Type
+        Private _typeNameTable(14) As String
+        Private _typeTable(14) As Global.System.Type
 
         Private Sub InitTypeTables()
-            _typeNameTable(0) = "GeographicCalculator.NumericBox"
+            _typeNameTable(0) = "GeographicCalculator.SingleNumericUpDown"
             _typeNameTable(1) = "Windows.UI.Xaml.Controls.UserControl"
-            _typeNameTable(2) = "Double"
+            _typeNameTable(2) = "Int32"
             _typeNameTable(3) = "GeographicCalculator.DMSinput"
-            _typeNameTable(4) = "GeographicCalculator.GeoCalcIcon"
-            _typeNameTable(5) = "GeographicCalculator.SrcSetPageVB"
-            _typeNameTable(6) = "Windows.UI.Xaml.Controls.Page"
-            _typeNameTable(7) = "GeographicCalculator.Common.NavigationHelper"
-            _typeNameTable(8) = "Windows.UI.Xaml.DependencyObject"
-            _typeNameTable(9) = "GeographicCalculator.Common.ObservableDictionary"
-            _typeNameTable(10) = "Object"
-            _typeNameTable(11) = "String"
-            _typeNameTable(12) = "Microsoft.Advertising.WinRT.UI.AdControl"
-            _typeNameTable(13) = "Windows.UI.Xaml.Controls.Control"
-            _typeNameTable(14) = "Boolean"
-            _typeNameTable(15) = "GeographicCalculator.MainPage"
-            _typeTable(0) = GetType(Global.GeographicCalculator.NumericBox)
+            _typeNameTable(4) = "Double"
+            _typeNameTable(5) = "GeographicCalculator.GeoCalcIcon"
+            _typeNameTable(6) = "GeographicCalculator.NumericBox"
+            _typeNameTable(7) = "GeographicCalculator.SrcSetPageVB"
+            _typeNameTable(8) = "Windows.UI.Xaml.Controls.Page"
+            _typeNameTable(9) = "GeographicCalculator.Common.NavigationHelper"
+            _typeNameTable(10) = "Windows.UI.Xaml.DependencyObject"
+            _typeNameTable(11) = "GeographicCalculator.Common.ObservableDictionary"
+            _typeNameTable(12) = "Object"
+            _typeNameTable(13) = "String"
+            _typeNameTable(14) = "GeographicCalculator.MainPage"
+            _typeTable(0) = GetType(Global.GeographicCalculator.SingleNumericUpDown)
             _typeTable(1) = GetType(Global.Windows.UI.Xaml.Controls.UserControl)
-            _typeTable(2) = GetType(Global.System.Double)
+            _typeTable(2) = GetType(Global.System.Int32)
             _typeTable(3) = GetType(Global.GeographicCalculator.DMSinput)
-            _typeTable(4) = GetType(Global.GeographicCalculator.GeoCalcIcon)
-            _typeTable(5) = GetType(Global.GeographicCalculator.SrcSetPageVB)
-            _typeTable(6) = GetType(Global.Windows.UI.Xaml.Controls.Page)
-            _typeTable(7) = GetType(Global.GeographicCalculator.Common.NavigationHelper)
-            _typeTable(8) = GetType(Global.Windows.UI.Xaml.DependencyObject)
-            _typeTable(9) = GetType(Global.GeographicCalculator.Common.ObservableDictionary)
-            _typeTable(10) = GetType(Global.System.Object)
-            _typeTable(11) = GetType(Global.System.String)
-            _typeTable(12) = GetType(Global.Microsoft.Advertising.WinRT.UI.AdControl)
-            _typeTable(13) = GetType(Global.Windows.UI.Xaml.Controls.Control)
-            _typeTable(14) = GetType(Global.System.Boolean)
-            _typeTable(15) = GetType(Global.GeographicCalculator.MainPage)
+            _typeTable(4) = GetType(Global.System.Double)
+            _typeTable(5) = GetType(Global.GeographicCalculator.GeoCalcIcon)
+            _typeTable(6) = GetType(Global.GeographicCalculator.NumericBox)
+            _typeTable(7) = GetType(Global.GeographicCalculator.SrcSetPageVB)
+            _typeTable(8) = GetType(Global.Windows.UI.Xaml.Controls.Page)
+            _typeTable(9) = GetType(Global.GeographicCalculator.Common.NavigationHelper)
+            _typeTable(10) = GetType(Global.Windows.UI.Xaml.DependencyObject)
+            _typeTable(11) = GetType(Global.GeographicCalculator.Common.ObservableDictionary)
+            _typeTable(12) = GetType(Global.System.Object)
+            _typeTable(13) = GetType(Global.System.String)
+            _typeTable(14) = GetType(Global.GeographicCalculator.MainPage)
         End Sub
 
         Private Function LookupTypeIndexByName(ByVal typeName As String) As Integer
@@ -176,35 +156,35 @@ Namespace Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo
             Return -1
         End Function
 
-        Private Function Activate_0_NumericBox() As Global.System.Object
-            Return New Global.GeographicCalculator.NumericBox()
+        Private Function Activate_0_SingleNumericUpDown() As Global.System.Object
+            Return New Global.GeographicCalculator.SingleNumericUpDown()
         End Function
 
         Private Function Activate_3_DMSinput() As Global.System.Object
             Return New Global.GeographicCalculator.DMSinput()
         End Function
 
-        Private Function Activate_4_GeoCalcIcon() As Global.System.Object
+        Private Function Activate_5_GeoCalcIcon() As Global.System.Object
             Return New Global.GeographicCalculator.GeoCalcIcon()
         End Function
 
-        Private Function Activate_5_SrcSetPageVB() As Global.System.Object
+        Private Function Activate_6_NumericBox() As Global.System.Object
+            Return New Global.GeographicCalculator.NumericBox()
+        End Function
+
+        Private Function Activate_7_SrcSetPageVB() As Global.System.Object
             Return New Global.GeographicCalculator.SrcSetPageVB()
         End Function
 
-        Private Function Activate_9_ObservableDictionary() As Global.System.Object
+        Private Function Activate_11_ObservableDictionary() As Global.System.Object
             Return New Global.GeographicCalculator.Common.ObservableDictionary()
         End Function
 
-        Private Function Activate_12_AdControl() As Global.System.Object
-            Return New Global.Microsoft.Advertising.WinRT.UI.AdControl()
-        End Function
-
-        Private Function Activate_15_MainPage() As Global.System.Object
+        Private Function Activate_14_MainPage() As Global.System.Object
             Return New Global.GeographicCalculator.MainPage()
         End Function
 
-        Private Sub MapAdd_9_ObservableDictionary(instance As Global.System.Object, key As Global.System.Object, item As Global.System.Object)
+        Private Sub MapAdd_11_ObservableDictionary(instance As Global.System.Object, key As Global.System.Object, item As Global.System.Object)
             Dim collection As Global.System.Collections.Generic.IDictionary(Of Global.System.String, Global.System.Object) = CType(instance, Global.System.Collections.Generic.IDictionary(Of Global.System.String, Global.System.Object))
             Dim newKey As Global.System.String = CType(key, Global.System.String)
             Dim newItem As Global.System.Object = CType(item, Global.System.Object)
@@ -219,17 +199,17 @@ Namespace Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo
             Dim type As Global.System.Type = _typeTable(typeIndex)
 
             Select Case typeIndex
-            Case 0     ' GeographicCalculator.NumericBox
+            Case 0     ' GeographicCalculator.SingleNumericUpDown
                 userType = New Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType(Me, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"))
-                userType.Activator = AddressOf Activate_0_NumericBox
-                userType.AddMemberName("Value")
+                userType.Activator = AddressOf Activate_0_SingleNumericUpDown
+                userType.AddMemberName("SelectedValue")
                 userType.SetIsLocalType()
                 xamlType = userType
 
             Case 1     ' Windows.UI.Xaml.Controls.UserControl
                 xamlType = New Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlSystemBaseType(typeName, type)
 
-            Case 2     ' Double
+            Case 2     ' Int32
                 xamlType = New Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlSystemBaseType(typeName, type)
 
             Case 3     ' GeographicCalculator.DMSinput
@@ -237,69 +217,64 @@ Namespace Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo
                 userType.Activator = AddressOf Activate_3_DMSinput
                 userType.AddMemberName("Radians")
                 userType.AddMemberName("Degrees")
+                userType.AddMemberName("MinValue")
+                userType.AddMemberName("MaxValue")
+                userType.AddMemberName("Decimals")
                 userType.SetIsLocalType()
                 xamlType = userType
 
-            Case 4     ' GeographicCalculator.GeoCalcIcon
+            Case 4     ' Double
+                xamlType = New Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlSystemBaseType(typeName, type)
+
+            Case 5     ' GeographicCalculator.GeoCalcIcon
                 userType = New Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType(Me, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"))
-                userType.Activator = AddressOf Activate_4_GeoCalcIcon
+                userType.Activator = AddressOf Activate_5_GeoCalcIcon
                 userType.SetIsLocalType()
                 xamlType = userType
 
-            Case 5     ' GeographicCalculator.SrcSetPageVB
+            Case 6     ' GeographicCalculator.NumericBox
+                userType = New Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType(Me, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"))
+                userType.Activator = AddressOf Activate_6_NumericBox
+                userType.AddMemberName("Value")
+                userType.SetIsLocalType()
+                xamlType = userType
+
+            Case 7     ' GeographicCalculator.SrcSetPageVB
                 userType = New Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType(Me, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"))
-                userType.Activator = AddressOf Activate_5_SrcSetPageVB
+                userType.Activator = AddressOf Activate_7_SrcSetPageVB
                 userType.AddMemberName("NavigationHelper")
                 userType.AddMemberName("DefaultViewModel")
                 userType.SetIsLocalType()
                 xamlType = userType
 
-            Case 6     ' Windows.UI.Xaml.Controls.Page
+            Case 8     ' Windows.UI.Xaml.Controls.Page
                 xamlType = New Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlSystemBaseType(typeName, type)
 
-            Case 7     ' GeographicCalculator.Common.NavigationHelper
+            Case 9     ' GeographicCalculator.Common.NavigationHelper
                 userType = New Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType(Me, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"))
                 userType.SetIsReturnTypeStub()
                 userType.SetIsLocalType()
                 xamlType = userType
 
-            Case 8     ' Windows.UI.Xaml.DependencyObject
+            Case 10     ' Windows.UI.Xaml.DependencyObject
                 xamlType = New Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlSystemBaseType(typeName, type)
 
-            Case 9     ' GeographicCalculator.Common.ObservableDictionary
+            Case 11     ' GeographicCalculator.Common.ObservableDictionary
                 userType = New Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType(Me, typeName, type, GetXamlTypeByName("Object"))
-                userType.DictionaryAdd = AddressOf MapAdd_9_ObservableDictionary
+                userType.DictionaryAdd = AddressOf MapAdd_11_ObservableDictionary
                 userType.SetIsReturnTypeStub()
                 userType.SetIsLocalType()
                 xamlType = userType
 
-            Case 10     ' Object
+            Case 12     ' Object
                 xamlType = New Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlSystemBaseType(typeName, type)
 
-            Case 11     ' String
+            Case 13     ' String
                 xamlType = New Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlSystemBaseType(typeName, type)
 
-            Case 12     ' Microsoft.Advertising.WinRT.UI.AdControl
-                userType = New Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType(Me, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Control"))
-                userType.Activator = AddressOf Activate_12_AdControl
-                userType.AddMemberName("ApplicationId")
-                userType.AddMemberName("AdUnitId")
-                userType.AddMemberName("Latitude")
-                userType.AddMemberName("Longitude")
-                userType.AddMemberName("IsEngaged")
-                userType.AddMemberName("IsAutoRefreshEnabled")
-                userType.AddMemberName("IsSuspended")
-                xamlType = userType
-
-            Case 13     ' Windows.UI.Xaml.Controls.Control
-                xamlType = New Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlSystemBaseType(typeName, type)
-
-            Case 14     ' Boolean
-                xamlType = New Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlSystemBaseType(typeName, type)
-
-            Case 15     ' GeographicCalculator.MainPage
+            Case 14     ' GeographicCalculator.MainPage
                 userType = New Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType(Me, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"))
-                userType.Activator = AddressOf Activate_15_MainPage
+                userType.Activator = AddressOf Activate_14_MainPage
                 userType.AddMemberName("NavigationHelper")
                 userType.AddMemberName("DefaultViewModel")
                 userType.SetIsLocalType()
@@ -309,56 +284,14 @@ Namespace Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo
             Return xamlType
         End Function
 
-        Private Dim _otherProviders As List(Of Global.Windows.UI.Xaml.Markup.IXamlMetadataProvider)
-        Private ReadOnly Property OtherProviders As List(Of Global.Windows.UI.Xaml.Markup.IXamlMetadataProvider)
-            Get
-                If _otherProviders Is Nothing
-                    _otherProviders = New List(Of Global.Windows.UI.Xaml.Markup.IXamlMetadataProvider)()
-                    Dim provider As Global.Windows.UI.Xaml.Markup.IXamlMetadataProvider
-                    provider = New Global.Microsoft.Advertising.WinRT.UI.XamlAdControl_XamlTypeInfo.XamlMetaDataProvider()
-                    _otherProviders.Add(provider)
-                End If
-                Return _otherProviders
-            End Get
-        End Property
 
-        Private Function CheckOtherMetadataProvidersForName(typeName As String) As Global.Windows.UI.Xaml.Markup.IXamlType
-            Dim xamlType As Global.Windows.UI.Xaml.Markup.IXamlType = Nothing
-            Dim foundXamlType As Global.Windows.UI.Xaml.Markup.IXamlType = Nothing
-            For Each xmp As Global.Windows.UI.Xaml.Markup.IXamlMetadataProvider In OtherProviders
-                xamlType = xmp.GetXamlType(typeName)
-                if xamlType IsNot Nothing Then
-                    If xamlType.IsConstructible Then    ' not Constructible means it might be a Return Type Stub
-                        Return xamlType
-                    End If
-                    foundXamlType = xamlType
-                End If
-            Next xmp
-            Return foundXamlType
+        Private Function get_0_SingleNumericUpDown_SelectedValue(ByVal instance As Global.System.Object) As Global.System.Object
+            Dim that As Global.GeographicCalculator.SingleNumericUpDown = CType(instance, Global.GeographicCalculator.SingleNumericUpDown)
+            Return that.SelectedValue
         End Function
-
-        Private Function CheckOtherMetadataProvidersForType(type As Global.System.Type) As Global.Windows.UI.Xaml.Markup.IXamlType
-            Dim xamlType As Global.Windows.UI.Xaml.Markup.IXamlType = Nothing
-            Dim foundXamlType As Global.Windows.UI.Xaml.Markup.IXamlType = Nothing
-            For Each xmp As Global.Windows.UI.Xaml.Markup.IXamlMetadataProvider In OtherProviders
-                xamlType = xmp.GetXamlType(type)
-                if xamlType IsNot Nothing Then
-                    If xamlType.IsConstructible Then    ' not Constructible means it might be a Return Type Stub
-                        Return xamlType
-                    End If
-                    foundXamlType = xamlType
-                End If
-            Next xmp
-            Return foundXamlType
-        End Function
-
-        Private Function get_0_NumericBox_Value(ByVal instance As Global.System.Object) As Global.System.Object
-            Dim that As Global.GeographicCalculator.NumericBox = CType(instance, Global.GeographicCalculator.NumericBox)
-            Return that.Value
-        End Function
-        Private Sub set_0_NumericBox_Value(ByVal instance As Global.System.Object, ByVal Value As Global.System.Object)
-            Dim that As Global.GeographicCalculator.NumericBox = CType(instance, Global.GeographicCalculator.NumericBox)
-            that.Value = CType(Value, Global.System.Double)
+        Private Sub set_0_SingleNumericUpDown_SelectedValue(ByVal instance As Global.System.Object, ByVal Value As Global.System.Object)
+            Dim that As Global.GeographicCalculator.SingleNumericUpDown = CType(instance, Global.GeographicCalculator.SingleNumericUpDown)
+            that.SelectedValue = CType(Value, Global.System.Int32)
         End Sub
         Private Function get_1_DMSinput_Radians(ByVal instance As Global.System.Object) As Global.System.Object
             Dim that As Global.GeographicCalculator.DMSinput = CType(instance, Global.GeographicCalculator.DMSinput)
@@ -376,67 +309,51 @@ Namespace Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo
             Dim that As Global.GeographicCalculator.DMSinput = CType(instance, Global.GeographicCalculator.DMSinput)
             that.Degrees = CType(Value, Global.System.Double)
         End Sub
-        Private Function get_3_SrcSetPageVB_NavigationHelper(ByVal instance As Global.System.Object) As Global.System.Object
+        Private Function get_3_DMSinput_MinValue(ByVal instance As Global.System.Object) As Global.System.Object
+            Dim that As Global.GeographicCalculator.DMSinput = CType(instance, Global.GeographicCalculator.DMSinput)
+            Return that.MinValue
+        End Function
+        Private Sub set_3_DMSinput_MinValue(ByVal instance As Global.System.Object, ByVal Value As Global.System.Object)
+            Dim that As Global.GeographicCalculator.DMSinput = CType(instance, Global.GeographicCalculator.DMSinput)
+            that.MinValue = CType(Value, Global.System.Double)
+        End Sub
+        Private Function get_4_DMSinput_MaxValue(ByVal instance As Global.System.Object) As Global.System.Object
+            Dim that As Global.GeographicCalculator.DMSinput = CType(instance, Global.GeographicCalculator.DMSinput)
+            Return that.MaxValue
+        End Function
+        Private Sub set_4_DMSinput_MaxValue(ByVal instance As Global.System.Object, ByVal Value As Global.System.Object)
+            Dim that As Global.GeographicCalculator.DMSinput = CType(instance, Global.GeographicCalculator.DMSinput)
+            that.MaxValue = CType(Value, Global.System.Double)
+        End Sub
+        Private Function get_5_DMSinput_Decimals(ByVal instance As Global.System.Object) As Global.System.Object
+            Dim that As Global.GeographicCalculator.DMSinput = CType(instance, Global.GeographicCalculator.DMSinput)
+            Return that.Decimals
+        End Function
+        Private Sub set_5_DMSinput_Decimals(ByVal instance As Global.System.Object, ByVal Value As Global.System.Object)
+            Dim that As Global.GeographicCalculator.DMSinput = CType(instance, Global.GeographicCalculator.DMSinput)
+            that.Decimals = CType(Value, Global.System.Int32)
+        End Sub
+        Private Function get_6_NumericBox_Value(ByVal instance As Global.System.Object) As Global.System.Object
+            Dim that As Global.GeographicCalculator.NumericBox = CType(instance, Global.GeographicCalculator.NumericBox)
+            Return that.Value
+        End Function
+        Private Sub set_6_NumericBox_Value(ByVal instance As Global.System.Object, ByVal Value As Global.System.Object)
+            Dim that As Global.GeographicCalculator.NumericBox = CType(instance, Global.GeographicCalculator.NumericBox)
+            that.Value = CType(Value, Global.System.Double)
+        End Sub
+        Private Function get_7_SrcSetPageVB_NavigationHelper(ByVal instance As Global.System.Object) As Global.System.Object
             Dim that As Global.GeographicCalculator.SrcSetPageVB = CType(instance, Global.GeographicCalculator.SrcSetPageVB)
             Return that.NavigationHelper
         End Function
-        Private Function get_4_SrcSetPageVB_DefaultViewModel(ByVal instance As Global.System.Object) As Global.System.Object
+        Private Function get_8_SrcSetPageVB_DefaultViewModel(ByVal instance As Global.System.Object) As Global.System.Object
             Dim that As Global.GeographicCalculator.SrcSetPageVB = CType(instance, Global.GeographicCalculator.SrcSetPageVB)
             Return that.DefaultViewModel
         End Function
-        Private Function get_5_AdControl_ApplicationId(ByVal instance As Global.System.Object) As Global.System.Object
-            Dim that As Global.Microsoft.Advertising.WinRT.UI.AdControl = CType(instance, Global.Microsoft.Advertising.WinRT.UI.AdControl)
-            Return that.ApplicationId
-        End Function
-        Private Sub set_5_AdControl_ApplicationId(ByVal instance As Global.System.Object, ByVal Value As Global.System.Object)
-            Dim that As Global.Microsoft.Advertising.WinRT.UI.AdControl = CType(instance, Global.Microsoft.Advertising.WinRT.UI.AdControl)
-            that.ApplicationId = CType(Value, Global.System.String)
-        End Sub
-        Private Function get_6_AdControl_AdUnitId(ByVal instance As Global.System.Object) As Global.System.Object
-            Dim that As Global.Microsoft.Advertising.WinRT.UI.AdControl = CType(instance, Global.Microsoft.Advertising.WinRT.UI.AdControl)
-            Return that.AdUnitId
-        End Function
-        Private Sub set_6_AdControl_AdUnitId(ByVal instance As Global.System.Object, ByVal Value As Global.System.Object)
-            Dim that As Global.Microsoft.Advertising.WinRT.UI.AdControl = CType(instance, Global.Microsoft.Advertising.WinRT.UI.AdControl)
-            that.AdUnitId = CType(Value, Global.System.String)
-        End Sub
-        Private Function get_7_AdControl_Latitude(ByVal instance As Global.System.Object) As Global.System.Object
-            Dim that As Global.Microsoft.Advertising.WinRT.UI.AdControl = CType(instance, Global.Microsoft.Advertising.WinRT.UI.AdControl)
-            Return that.Latitude
-        End Function
-        Private Sub set_7_AdControl_Latitude(ByVal instance As Global.System.Object, ByVal Value As Global.System.Object)
-            Dim that As Global.Microsoft.Advertising.WinRT.UI.AdControl = CType(instance, Global.Microsoft.Advertising.WinRT.UI.AdControl)
-            that.Latitude = CType(Value, Global.System.Double)
-        End Sub
-        Private Function get_8_AdControl_Longitude(ByVal instance As Global.System.Object) As Global.System.Object
-            Dim that As Global.Microsoft.Advertising.WinRT.UI.AdControl = CType(instance, Global.Microsoft.Advertising.WinRT.UI.AdControl)
-            Return that.Longitude
-        End Function
-        Private Sub set_8_AdControl_Longitude(ByVal instance As Global.System.Object, ByVal Value As Global.System.Object)
-            Dim that As Global.Microsoft.Advertising.WinRT.UI.AdControl = CType(instance, Global.Microsoft.Advertising.WinRT.UI.AdControl)
-            that.Longitude = CType(Value, Global.System.Double)
-        End Sub
-        Private Function get_9_AdControl_IsEngaged(ByVal instance As Global.System.Object) As Global.System.Object
-            Dim that As Global.Microsoft.Advertising.WinRT.UI.AdControl = CType(instance, Global.Microsoft.Advertising.WinRT.UI.AdControl)
-            Return that.IsEngaged
-        End Function
-        Private Function get_10_AdControl_IsAutoRefreshEnabled(ByVal instance As Global.System.Object) As Global.System.Object
-            Dim that As Global.Microsoft.Advertising.WinRT.UI.AdControl = CType(instance, Global.Microsoft.Advertising.WinRT.UI.AdControl)
-            Return that.IsAutoRefreshEnabled
-        End Function
-        Private Sub set_10_AdControl_IsAutoRefreshEnabled(ByVal instance As Global.System.Object, ByVal Value As Global.System.Object)
-            Dim that As Global.Microsoft.Advertising.WinRT.UI.AdControl = CType(instance, Global.Microsoft.Advertising.WinRT.UI.AdControl)
-            that.IsAutoRefreshEnabled = CType(Value, Global.System.Boolean)
-        End Sub
-        Private Function get_11_AdControl_IsSuspended(ByVal instance As Global.System.Object) As Global.System.Object
-            Dim that As Global.Microsoft.Advertising.WinRT.UI.AdControl = CType(instance, Global.Microsoft.Advertising.WinRT.UI.AdControl)
-            Return that.IsSuspended
-        End Function
-        Private Function get_12_MainPage_NavigationHelper(ByVal instance As Global.System.Object) As Global.System.Object
+        Private Function get_9_MainPage_NavigationHelper(ByVal instance As Global.System.Object) As Global.System.Object
             Dim that As Global.GeographicCalculator.MainPage = CType(instance, Global.GeographicCalculator.MainPage)
             Return that.NavigationHelper
         End Function
-        Private Function get_13_MainPage_DefaultViewModel(ByVal instance As Global.System.Object) As Global.System.Object
+        Private Function get_10_MainPage_DefaultViewModel(ByVal instance As Global.System.Object) As Global.System.Object
             Dim that As Global.GeographicCalculator.MainPage = CType(instance, Global.GeographicCalculator.MainPage)
             Return that.DefaultViewModel
         End Function
@@ -446,11 +363,11 @@ Namespace Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo
             Dim userType As Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType
 
             Select Case longMemberName
-            Case "GeographicCalculator.NumericBox.Value"
-                userType = CType(GetXamlTypeByName("GeographicCalculator.NumericBox"), Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType)
-                xamlMember = new Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlMember(Me, "Value", "Double")
-                xamlMember.Getter = AddressOf get_0_NumericBox_Value
-                xamlMember.Setter = AddressOf set_0_NumericBox_Value
+            Case "GeographicCalculator.SingleNumericUpDown.SelectedValue"
+                userType = CType(GetXamlTypeByName("GeographicCalculator.SingleNumericUpDown"), Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType)
+                xamlMember = new Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlMember(Me, "SelectedValue", "Int32")
+                xamlMember.Getter = AddressOf get_0_SingleNumericUpDown_SelectedValue
+                xamlMember.Setter = AddressOf set_0_SingleNumericUpDown_SelectedValue
             Case "GeographicCalculator.DMSinput.Radians"
                 userType = CType(GetXamlTypeByName("GeographicCalculator.DMSinput"), Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType)
                 xamlMember = new Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlMember(Me, "Radians", "Double")
@@ -461,60 +378,45 @@ Namespace Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo
                 xamlMember = new Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlMember(Me, "Degrees", "Double")
                 xamlMember.Getter = AddressOf get_2_DMSinput_Degrees
                 xamlMember.Setter = AddressOf set_2_DMSinput_Degrees
+            Case "GeographicCalculator.DMSinput.MinValue"
+                userType = CType(GetXamlTypeByName("GeographicCalculator.DMSinput"), Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType)
+                xamlMember = new Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlMember(Me, "MinValue", "Double")
+                xamlMember.Getter = AddressOf get_3_DMSinput_MinValue
+                xamlMember.Setter = AddressOf set_3_DMSinput_MinValue
+            Case "GeographicCalculator.DMSinput.MaxValue"
+                userType = CType(GetXamlTypeByName("GeographicCalculator.DMSinput"), Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType)
+                xamlMember = new Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlMember(Me, "MaxValue", "Double")
+                xamlMember.Getter = AddressOf get_4_DMSinput_MaxValue
+                xamlMember.Setter = AddressOf set_4_DMSinput_MaxValue
+            Case "GeographicCalculator.DMSinput.Decimals"
+                userType = CType(GetXamlTypeByName("GeographicCalculator.DMSinput"), Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType)
+                xamlMember = new Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlMember(Me, "Decimals", "Int32")
+                xamlMember.Getter = AddressOf get_5_DMSinput_Decimals
+                xamlMember.Setter = AddressOf set_5_DMSinput_Decimals
+            Case "GeographicCalculator.NumericBox.Value"
+                userType = CType(GetXamlTypeByName("GeographicCalculator.NumericBox"), Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType)
+                xamlMember = new Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlMember(Me, "Value", "Double")
+                xamlMember.Getter = AddressOf get_6_NumericBox_Value
+                xamlMember.Setter = AddressOf set_6_NumericBox_Value
             Case "GeographicCalculator.SrcSetPageVB.NavigationHelper"
                 userType = CType(GetXamlTypeByName("GeographicCalculator.SrcSetPageVB"), Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType)
                 xamlMember = new Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlMember(Me, "NavigationHelper", "GeographicCalculator.Common.NavigationHelper")
-                xamlMember.Getter = AddressOf get_3_SrcSetPageVB_NavigationHelper
+                xamlMember.Getter = AddressOf get_7_SrcSetPageVB_NavigationHelper
                 xamlMember.SetIsReadOnly()
             Case "GeographicCalculator.SrcSetPageVB.DefaultViewModel"
                 userType = CType(GetXamlTypeByName("GeographicCalculator.SrcSetPageVB"), Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType)
                 xamlMember = new Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlMember(Me, "DefaultViewModel", "GeographicCalculator.Common.ObservableDictionary")
-                xamlMember.Getter = AddressOf get_4_SrcSetPageVB_DefaultViewModel
-                xamlMember.SetIsReadOnly()
-            Case "Microsoft.Advertising.WinRT.UI.AdControl.ApplicationId"
-                userType = CType(GetXamlTypeByName("Microsoft.Advertising.WinRT.UI.AdControl"), Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType)
-                xamlMember = new Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlMember(Me, "ApplicationId", "String")
-                xamlMember.Getter = AddressOf get_5_AdControl_ApplicationId
-                xamlMember.Setter = AddressOf set_5_AdControl_ApplicationId
-            Case "Microsoft.Advertising.WinRT.UI.AdControl.AdUnitId"
-                userType = CType(GetXamlTypeByName("Microsoft.Advertising.WinRT.UI.AdControl"), Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType)
-                xamlMember = new Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlMember(Me, "AdUnitId", "String")
-                xamlMember.Getter = AddressOf get_6_AdControl_AdUnitId
-                xamlMember.Setter = AddressOf set_6_AdControl_AdUnitId
-            Case "Microsoft.Advertising.WinRT.UI.AdControl.Latitude"
-                userType = CType(GetXamlTypeByName("Microsoft.Advertising.WinRT.UI.AdControl"), Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType)
-                xamlMember = new Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlMember(Me, "Latitude", "Double")
-                xamlMember.Getter = AddressOf get_7_AdControl_Latitude
-                xamlMember.Setter = AddressOf set_7_AdControl_Latitude
-            Case "Microsoft.Advertising.WinRT.UI.AdControl.Longitude"
-                userType = CType(GetXamlTypeByName("Microsoft.Advertising.WinRT.UI.AdControl"), Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType)
-                xamlMember = new Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlMember(Me, "Longitude", "Double")
-                xamlMember.Getter = AddressOf get_8_AdControl_Longitude
-                xamlMember.Setter = AddressOf set_8_AdControl_Longitude
-            Case "Microsoft.Advertising.WinRT.UI.AdControl.IsEngaged"
-                userType = CType(GetXamlTypeByName("Microsoft.Advertising.WinRT.UI.AdControl"), Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType)
-                xamlMember = new Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlMember(Me, "IsEngaged", "Boolean")
-                xamlMember.Getter = AddressOf get_9_AdControl_IsEngaged
-                xamlMember.SetIsReadOnly()
-            Case "Microsoft.Advertising.WinRT.UI.AdControl.IsAutoRefreshEnabled"
-                userType = CType(GetXamlTypeByName("Microsoft.Advertising.WinRT.UI.AdControl"), Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType)
-                xamlMember = new Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlMember(Me, "IsAutoRefreshEnabled", "Boolean")
-                xamlMember.Getter = AddressOf get_10_AdControl_IsAutoRefreshEnabled
-                xamlMember.Setter = AddressOf set_10_AdControl_IsAutoRefreshEnabled
-            Case "Microsoft.Advertising.WinRT.UI.AdControl.IsSuspended"
-                userType = CType(GetXamlTypeByName("Microsoft.Advertising.WinRT.UI.AdControl"), Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType)
-                xamlMember = new Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlMember(Me, "IsSuspended", "Boolean")
-                xamlMember.Getter = AddressOf get_11_AdControl_IsSuspended
+                xamlMember.Getter = AddressOf get_8_SrcSetPageVB_DefaultViewModel
                 xamlMember.SetIsReadOnly()
             Case "GeographicCalculator.MainPage.NavigationHelper"
                 userType = CType(GetXamlTypeByName("GeographicCalculator.MainPage"), Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType)
                 xamlMember = new Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlMember(Me, "NavigationHelper", "GeographicCalculator.Common.NavigationHelper")
-                xamlMember.Getter = AddressOf get_12_MainPage_NavigationHelper
+                xamlMember.Getter = AddressOf get_9_MainPage_NavigationHelper
                 xamlMember.SetIsReadOnly()
             Case "GeographicCalculator.MainPage.DefaultViewModel"
                 userType = CType(GetXamlTypeByName("GeographicCalculator.MainPage"), Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlUserType)
                 xamlMember = new Global.GeographicCalculator.GeographicCalculator_XamlTypeInfo.XamlMember(Me, "DefaultViewModel", "GeographicCalculator.Common.ObservableDictionary")
-                xamlMember.Getter = AddressOf get_13_MainPage_DefaultViewModel
+                xamlMember.Getter = AddressOf get_10_MainPage_DefaultViewModel
                 xamlMember.SetIsReadOnly()
             End Select
             Return xamlMember

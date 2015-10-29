@@ -7,10 +7,6 @@ C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalcula
 C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\bin\Release\resources.pri
 C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\bin\Release\AppxManifest.xml
 C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\bin\Release\GeographicCalculator.build.appxrecipe
-C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\bin\Release\Microsoft.Advertising.WinRT.UI.winmd
-C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\bin\Release\Microsoft.Advertising.WinRT.UI.xml
-C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\bin\Release\MicrosoftAdvertising.winmd
-C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\bin\Release\MicrosoftAdvertising.xml
 C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\obj\Release\App.g.i.vb
 C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\obj\Release\App.g.vb
 C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\obj\Release\MainPage.g.i.vb
@@ -67,3 +63,13 @@ C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalcula
 C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\obj\Release\GeoCalcIcon.g.vb
 C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\obj\Release\GeoCalcIcon.xaml
 C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\obj\Release\GeoCalcIcon.xbf
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\bin\Release\SingleNumericUpDown.xbf
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\bin\Release\Themes\Generic.xbf
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\obj\Release\SingleNumericUpDown.g.i.vb
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\obj\Release\SingleNumericUpDown.g.vb
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\obj\Release\Themes\Generic.g.i.vb
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\obj\Release\Themes\Generic.g.vb
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\obj\Release\Themes\Generic.xaml
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\obj\Release\Themes\Generic.xbf
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\obj\Release\SingleNumericUpDown.xaml
+C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\obj\Release\SingleNumericUpDown.xbf

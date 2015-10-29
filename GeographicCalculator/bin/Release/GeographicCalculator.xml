@@ -24,7 +24,7 @@ GeographicCalculator
  The source of the event; typically <see cref="P:GeographicCalculator.MainPage.NavigationHelper"/>
 	</param>
 	<param name="e">Event data that provides both the navigation parameter passed to
- <see cref="M:Windows.UI.Xaml.Controls.Frame.Navigate(System.Type,System.Object)"/> when this page was initially requested and
+ <see cref="M:Windows.UI.Xaml.Controls.Frame.Navigate(Windows.UI.Xaml.Interop.TypeName,System.Object)"/> when this page was initially requested and
  a dictionary of state preserved by this page during an earlier
  session.  The state will be null the first time a page is visited.</param>
 </member><member name="M:GeographicCalculator.MainPage.NavigationHelper_SaveState(System.Object,GeographicCalculator.Common.SaveStateEventArgs)">
@@ -108,7 +108,7 @@ GeographicCalculator
  The source of the event; typically <see cref="P:GeographicCalculator.SrcSetPageVB.NavigationHelper"/>
 	</param>
 	<param name="e">Event data that provides both the navigation parameter passed to
- <see cref="M:Windows.UI.Xaml.Controls.Frame.Navigate(System.Type,System.Object)"/> when this page was initially requested and
+ <see cref="M:Windows.UI.Xaml.Controls.Frame.Navigate(Windows.UI.Xaml.Interop.TypeName,System.Object)"/> when this page was initially requested and
  a dictionary of state preserved by this page during an earlier
  session.  The state will be null the first time a page is visited.</param>
 </member><member name="M:GeographicCalculator.SrcSetPageVB.NavigationHelper_SaveState(System.Object,GeographicCalculator.Common.SaveStateEventArgs)">

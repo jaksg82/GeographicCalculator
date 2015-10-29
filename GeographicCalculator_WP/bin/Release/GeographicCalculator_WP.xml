@@ -149,21 +149,6 @@ GeographicCalculator_WP
  </code>
 		</example>
 	</remarks>
-</member><member name="T:GeographicCalculator_WP.Data.SampleDataItem">
-	<summary>
- Generic item data model.
- </summary>
-</member><member name="T:GeographicCalculator_WP.Data.SampleDataGroup">
-	<summary>
- Generic group data model.
- </summary>
-</member><member name="T:GeographicCalculator_WP.Data.SampleDataSource">
-	<summary>
- Creates a collection of groups and items with content read from a static json file.
- 
- SampleDataSource initializes with data read from a static json file included in the 
- project.  This provides sample data at both design-time and run-time.
- </summary>
 </member><member name="P:GeographicCalculator_WP.MainPage_WP.NavigationHelper">
 	<summary>
  Gets the <see cref="P:GeographicCalculator_WP.MainPage_WP.NavigationHelper"/> associated with this <see cref="T:Windows.UI.Xaml.Controls.Page"/>.

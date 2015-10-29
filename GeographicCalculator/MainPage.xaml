@@ -4,7 +4,6 @@
     xmlns:local="using:GeographicCalculator"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:UI="using:Microsoft.Advertising.WinRT.UI"
     x:Class="GeographicCalculator.MainPage"
     mc:Ignorable="d">
     <Page.Resources>
@@ -42,6 +41,8 @@
             <Setter Property="Width" Value="250" />
             <Setter Property="Background" Value="#FF0B9511"/>
         </Style>
+        <x:Double x:Key="PlusPi">3.14159265358979323846264338327950288419716939937510</x:Double>
+        <x:Double x:Key="MinusPi">-3.14159265358979323846264338327950288419716939937510</x:Double>
     </Page.Resources>
     <Page.TopAppBar>
         <AppBar Background="#FF007FFF">
@@ -161,9 +162,9 @@
                 <TextBlock x:Uid="UI_Main_InputTitle" Grid.Row="0" Text="Input Coordinates:" Style="{StaticResource CoordValue}" />
                 <ComboBox x:Name="InputFormat" Grid.Row="1" Margin="2">
                     <ComboBoxItem Content="Projected meters"/>
-                    <ComboBoxItem Content="Geographic dd:mm:ss" IsSelected="True"/>
-                    <ComboBoxItem Content="Geographic dd:mm" />
-                    <ComboBoxItem Content="Geographic dd"/>
+                    <ComboBoxItem Content="Geographic dd°mm'ss" IsSelected="True"/>
+                    <ComboBoxItem Content="Geographic dd°mm" />
+                    <ComboBoxItem Content="Geographic dd°"/>
                     <ComboBoxItem Content="Geographic ddmm"/>
                 </ComboBox>
                 <TextBlock x:Uid="UI_Main_Longitude" Text="Longitude:" Grid.Row="2" Style="{StaticResource CoordValue}" />
@@ -357,7 +358,7 @@
             <!-- Footer -->
 
             <StackPanel x:Name="Footer" Grid.Row="1" Margin="0,0,0,0" VerticalAlignment="Bottom" >
-                <UI:AdControl x:Name="adControl" ApplicationId="d25517cb-12d4-4699-8bdc-52040c712cab" AdUnitId="10043104"/>
+                <local:DMSinput MinValue="{StaticResource MinusPi}" MaxValue="{StaticResource PlusPi}" Decimals="2"/>
                 <TextBlock x:Name="InfoCrs1" />
                 <TextBlock x:Name="InfoCrs2" />
                 <TextBlock Text="© Simone Giacomonni. All rights reserved." TextWrapping="Wrap" HorizontalAlignment="Left"/>

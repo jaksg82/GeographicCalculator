@@ -8,7 +8,7 @@
     <PackageArchitecture>neutral</PackageArchitecture>
     <PackageIdentityName>bb6483d9-d342-484b-b3fe-756f2fda5de5</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\obj\Release\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>326F58330645C9CBA4A49A3955C7689E6121F334E93DD193F4D229CF084AA869</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>89F5E8534702C001AA78B72111523C02CFB476B77142AFECE28ADF9A0AD064A4</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>bb6483d9-d342-484b-b3fe-756f2fda5de5_1.0.0.0_neutral__fqw23kgct0kaw</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>bb6483d9-d342-484b-b3fe-756f2fda5de5_fqw23kgct0kaw!App</RegisteredUserModeAppID>
     <RegisteredPackageID>bb6483d9-d342-484b-b3fe-756f2fda5de5</RegisteredPackageID>
@@ -20,53 +20,25 @@
     <AppXManifest Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\bin\Release\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2014-10-07T09:28:47.009</Modified>
+      <Modified>2015-02-25T11:38:34.169</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\bin\Release\GeographicCalculator.exe">
       <PackagePath>GeographicCalculator.exe</PackagePath>
-      <Modified>2014-10-13T07:57:19.835</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\References\CommonConfiguration\neutral\Microsoft.Advertising.WinRT.UI.winmd">
-      <PackagePath>Microsoft.Advertising.WinRT.UI.winmd</PackagePath>
-      <Modified>2014-04-28T15:27:38.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\References\CommonConfiguration\neutral\MicrosoftAdvertising.winmd">
-      <PackagePath>MicrosoftAdvertising.winmd</PackagePath>
-      <Modified>2014-04-28T15:27:38.000</Modified>
+      <Modified>2015-02-25T11:38:29.830</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakDatum\bin\Release\JakDatum.dll">
       <PackagePath>JakDatum.dll</PackagePath>
-      <Modified>2014-10-08T08:21:52.450</Modified>
+      <Modified>2015-02-25T11:38:17.389</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakMathLib\bin\Release\JakMathLib.dll">
       <PackagePath>JakMathLib.dll</PackagePath>
-      <Modified>2014-10-07T09:27:57.889</Modified>
+      <Modified>2015-02-24T17:04:28.505</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakStringFormats\bin\Release\JakStringFormats.dll">
       <PackagePath>JakStringFormats.dll</PackagePath>
-      <Modified>2014-10-07T09:27:59.323</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\Redist\CommonConfiguration\neutral\Microsoft.Advertising.WinRT.UI\AdSettingsFlyout.xbf">
-      <PackagePath>Microsoft.Advertising.WinRT.UI\AdSettingsFlyout.xbf</PackagePath>
-      <Modified>2014-03-31T12:51:28.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\Redist\CommonConfiguration\neutral\Microsoft.Advertising.WinRT.UI\Themes\Generic.xbf">
-      <PackagePath>Microsoft.Advertising.WinRT.UI\Themes\Generic.xbf</PackagePath>
-      <Modified>2014-03-31T12:51:28.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\Redist\CommonConfiguration\neutral\Microsoft.Advertising.WinRT.UI\bootstrap.html">
-      <PackagePath>Microsoft.Advertising.WinRT.UI\bootstrap.html</PackagePath>
-      <Modified>2014-03-31T12:51:32.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\Redist\CommonConfiguration\neutral\Microsoft.Advertising.WinRT.UI\mraidApi.html">
-      <PackagePath>Microsoft.Advertising.WinRT.UI\mraidApi.html</PackagePath>
-      <Modified>2014-03-31T12:51:32.000</Modified>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\MSAdvertisingXaml\8.1\Redist\CommonConfiguration\neutral\Microsoft.Advertising.WinRT.UI\ormma.js">
-      <PackagePath>Microsoft.Advertising.WinRT.UI\ormma.js</PackagePath>
-      <Modified>2014-04-28T15:30:56.000</Modified>
+      <Modified>2015-02-24T17:04:29.033</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\Assets\BwSplash.scale-100.png">
       <PackagePath>Assets\BwSplash.scale-100.png</PackagePath>
@@ -232,35 +204,43 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\bin\Release\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2014-10-07T09:28:21.275</Modified>
+      <Modified>2015-02-20T15:46:53.784</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\bin\Release\DMSinput.xbf">
       <PackagePath>DMSinput.xbf</PackagePath>
-      <Modified>2014-10-07T09:28:21.275</Modified>
+      <Modified>2015-02-20T15:46:53.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\bin\Release\GeoCalcIcon.xbf">
       <PackagePath>GeoCalcIcon.xbf</PackagePath>
-      <Modified>2014-10-07T09:28:21.276</Modified>
+      <Modified>2015-02-20T15:46:53.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\bin\Release\NumericBox.xbf">
       <PackagePath>NumericBox.xbf</PackagePath>
-      <Modified>2014-10-07T09:28:21.276</Modified>
+      <Modified>2015-02-20T15:46:53.786</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\bin\Release\SingleNumericUpDown.xbf">
+      <PackagePath>SingleNumericUpDown.xbf</PackagePath>
+      <Modified>2015-02-20T15:46:53.786</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\bin\Release\SrcSetPage.xbf">
       <PackagePath>SrcSetPage.xbf</PackagePath>
-      <Modified>2014-10-08T06:33:58.736</Modified>
+      <Modified>2015-02-20T15:46:53.787</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\bin\Release\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2014-10-09T01:49:38.793</Modified>
+      <Modified>2015-02-20T15:46:53.787</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\bin\Release\Themes\Generic.xbf">
+      <PackagePath>Themes\Generic.xbf</PackagePath>
+      <Modified>2015-02-20T15:46:53.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\bin\Release\GeographicCalculator.xr.xml">
       <PackagePath>GeographicCalculator.xr.xml</PackagePath>
-      <Modified>2014-10-07T05:23:11.772</Modified>
+      <Modified>2015-02-20T15:34:33.436</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\GeographicCalculator\bin\Release\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2014-10-07T09:28:25.869</Modified>
+      <Modified>2015-02-25T11:38:33.330</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
