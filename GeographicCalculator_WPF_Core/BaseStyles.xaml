@@ -1,0 +1,86 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:GeographicCalculatorWPFCore"
+    xmlns:s="clr-namespace:GeographicCalculatorWPFCore.Statics">
+    <!--  Base Colors  -->
+    <SolidColorBrush x:Key="BackgroundSolidColor" Color="White" />
+    <SolidColorBrush x:Key="ForegroundSolidColor" Color="Black" />
+    <SolidColorBrush x:Key="ButtonBackgroundSolidColor" Color="LightGray" />
+    <SolidColorBrush x:Key="TextboxBackgroundSolidColor" Color="White" />
+
+    <!--  Button Styles  -->
+    <Style x:Key="MainButton" TargetType="Button">
+        <Setter Property="Height" Value="{x:Static s:DefaultValues.BaseButtonSize}" />
+        <Setter Property="Width" Value="{x:Static s:DefaultValues.BaseButtonSize}" />
+        <Setter Property="FontFamily" Value="{DynamicResource SymbolFontFamily}" />
+        <Setter Property="FontSize" Value="{x:Static s:DefaultValues.BaseIconSize}" />
+        <Setter Property="Background" Value="{DynamicResource ButtonBackgroundSolidColor}" />
+        <Setter Property="Foreground" Value="{DynamicResource ForegroundSolidColor}" />
+        <Setter Property="BorderBrush" Value="{DynamicResource ForegroundSolidColor}" />
+        <Setter Property="BorderThickness" Value="1" />
+    </Style>
+    <Style x:Key="SetButton" TargetType="Button">
+        <Setter Property="Height" Value="{x:Static s:DefaultValues.BaseIconSize}" />
+        <Setter Property="Width" Value="{x:Static s:DefaultValues.BaseIconSize}" />
+        <Setter Property="FontFamily" Value="{DynamicResource SymbolFontFamily}" />
+        <Setter Property="FontSize" Value="{x:Static s:DefaultValues.TitleFontSize}" />
+        <Setter Property="Background" Value="{DynamicResource ButtonBackgroundSolidColor}" />
+        <Setter Property="Foreground" Value="{DynamicResource ForegroundSolidColor}" />
+        <Setter Property="BorderBrush" Value="{x:Null}" />
+    </Style>
+
+    <!--  TextBlock Styles  -->
+    <Style x:Key="CrsTitle" TargetType="TextBlock">
+        <Setter Property="TextWrapping" Value="WrapWithOverflow" />
+        <Setter Property="FontSize" Value="{x:Static s:DefaultValues.BaseFontSize}" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="Margin" Value="0,12,0,0" />
+        <Setter Property="Foreground" Value="{DynamicResource ForegroundSolidColor}" />
+    </Style>
+    <Style x:Key="CrsValue" TargetType="TextBlock">
+        <Setter Property="TextWrapping" Value="WrapWithOverflow" />
+        <Setter Property="FontSize" Value="{x:Static s:DefaultValues.BaseFontSize}" />
+        <Setter Property="FontWeight" Value="Normal" />
+        <Setter Property="Foreground" Value="{DynamicResource ForegroundSolidColor}" />
+        <Setter Property="Margin" Value="6,0,6,6" />
+    </Style>
+    <Style x:Key="InOutTitle" TargetType="TextBlock">
+        <Setter Property="TextWrapping" Value="NoWrap" />
+        <Setter Property="FontSize" Value="{x:Static s:DefaultValues.BaseFontSize}" />
+        <Setter Property="FontWeight" Value="Bold" />
+        <Setter Property="HorizontalAlignment" Value="Right" />
+        <Setter Property="VerticalAlignment" Value="Center" />
+        <Setter Property="Margin" Value="6,0" />
+        <Setter Property="Foreground" Value="{DynamicResource ForegroundSolidColor}" />
+    </Style>
+    <Style
+        x:Key="InOutValue"
+        BasedOn="{StaticResource InOutTitle}"
+        TargetType="TextBlock">
+        <Setter Property="FontWeight" Value="Normal" />
+    </Style>
+
+    <!--  TextBox Styles  -->
+    <Style x:Key="InOutEditableValue" TargetType="TextBox">
+        <Setter Property="Foreground" Value="{DynamicResource ForegroundSolidColor}" />
+        <Setter Property="Background" Value="{DynamicResource TextboxBackgroundSolidColor}" />
+        <Setter Property="TextWrapping" Value="NoWrap" />
+        <Setter Property="FontSize" Value="{x:Static s:DefaultValues.BaseFontSize}" />
+        <Setter Property="FontWeight" Value="Normal" />
+        <Setter Property="HorizontalAlignment" Value="Stretch" />
+        <Setter Property="TextAlignment" Value="Right" />
+    </Style>
+
+    <!--  Border Styles  -->
+    <Style x:Key="MainBorder" TargetType="Border">
+        <Setter Property="BorderBrush" Value="{DynamicResource ButtonBackgroundSolidColor}" />
+        <Setter Property="BorderThickness" Value="1" />
+    </Style>
+
+    <!--  Combobox Styles  -->
+    <Style x:Key="SettingSelection" TargetType="ComboBox">
+        <Setter Property="Margin" Value="0,3" />
+        <Setter Property="FontSize" Value="{x:Static s:DefaultValues.BaseFontSize}" />
+    </Style>
+</ResourceDictionary>

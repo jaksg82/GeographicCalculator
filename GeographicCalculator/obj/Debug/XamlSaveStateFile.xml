@@ -1,7 +1,0 @@
-<XamlCompilerSaveState>
-  <ReferenceAssemblyList>
-    <LocalAssembly PathName="c:\users\simone\dropbox\progetti windows8\geographiccalculator\geographiccalculator\obj\debug\intermediatexaml\geographiccalculator.exe" HashGuid="ea4fd752-2d28-5b63-fb2f-22ce4f145568" />
-    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\msadvertisingxaml\8.1\references\commonconfiguration\neutral\microsoft.advertising.winrt.ui.winmd" HashGuid="e2e1868b-6ac9-03b1-ca83-3c4740a6cdfb" />
-    <ReferenceAssembly PathName="c:\program files (x86)\microsoft sdks\windows\v8.1\extensionsdks\msadvertisingxaml\8.1\references\commonconfiguration\neutral\microsoftadvertising.winmd" HashGuid="ff7acc79-1a32-fd80-27f3-998d24e2b25e" />
-  </ReferenceAssemblyList>
-</XamlCompilerSaveState>

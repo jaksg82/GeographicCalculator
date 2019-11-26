@@ -73,6 +73,9 @@ ipch/
 *.vsp
 *.vspx
 
+# Visual Studio Design Time Cache
+.vs/
+
 # TFS 2012 Local Workspace
 $tf/
 

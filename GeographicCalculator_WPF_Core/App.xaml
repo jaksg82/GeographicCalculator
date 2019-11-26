@@ -1,0 +1,12 @@
+﻿<Application
+    x:Class="GeographicCalculatorWPFCore.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:GeographicCalculatorWPFCore"
+    StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <!--<FontFamily x:Key="SymbolFontFamily">./Assets/fa-solid-900.otf#Font Awesone 5 Free Solid</FontFamily>-->
+        <!--<FontFamily x:Key="SymbolFontFamily">pack://application:,,,/Assets/seguisym10.ttf#SegUISym10</FontFamily>-->
+        <FontFamily x:Key="SymbolFontFamily">pack://application:,,,/Assets/SEGMDL2_1-75#Segoe MDL2 Assets</FontFamily>
+    </Application.Resources>
+</Application>

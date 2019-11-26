@@ -1,6 +1,0 @@
-C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakStringFormats\bin\Release\JakStringFormats.dll
-C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakStringFormats\bin\Release\JakStringFormats.pdb
-C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakStringFormats\bin\Release\JakStringFormats.xml
-C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakStringFormats\obj\Release\JakStringFormats.dll
-C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakStringFormats\obj\Release\JakStringFormats.xml
-C:\Users\Simone\Dropbox\Progetti Windows8\GeographicCalculator\JakStringFormats\obj\Release\JakStringFormats.pdb
