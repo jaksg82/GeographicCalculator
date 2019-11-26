@@ -1,7 +1,9 @@
 GeographicCalculator
 ====================
 
-A WinRT/WinPhone application for coordinate conversions
+This is a completely new rewrite of the application.
+Now the app is based on my standard library published on NuGet.
+At the moment the app will target new Windows Desktop environment (WPF on NetCore v3).
+Further platform can be targeted as the main app become more stable and complete.
 
-This is my first attempt to port an existing Winform application to the WinRT/Phone ambient.
-All this are to be considered as a learning exercise.
+The original WinRT/WinPhone application are deprecated and removed from this repository.
