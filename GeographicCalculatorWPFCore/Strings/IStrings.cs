@@ -2,12 +2,14 @@
 {
     public interface IStrings
     {
-        // Generic Strings
+        // Generic Strings //
         string AppTitle { get; }
 
         string NotDefined { get; }
+        string BtnApply { get; }
+        string BtnCancel { get; }
 
-        // UI Main Single Point
+        // UI Main Single Point //
         string TxbGeoTitle { get; }
 
         string TxbGeoLatTitle { get; }
@@ -24,13 +26,34 @@
         string CrsEllName { get; }
         string CrsShiftName { get; }
 
-        // Panel Settings
+        // Panel Settings //
         string TxbSetGeoFormat { get; }
 
         string TxbSetGeoSign { get; }
         string TxbSetGeoDecimals { get; }
         string TxbSetPrjFormat { get; }
         string TxbSetPrjDecimals { get; }
+        string SetCrsPrj { get; }
+        string SetCrsEll { get; }
+        string SetCrsTrans { get; }
+        string SetCrsPrjFullName { get; }
+        string SetCrsPrjShortName { get; }
+        string SetCrsPrjMethod { get; }
+        string SetCrsEllEpsgId { get; }
+        string SetCrsEllFullName { get; }
+        string SetCrsEllSmAxis { get; }
+        string SetCrsEllInvFlatt { get; }
+        string SetCrsShiftMethod { get; }
+        string SetCrsShiftDx { get; }
+        string SetCrsShiftDy { get; }
+        string SetCrsShiftDz { get; }
+        string SetCrsShiftRx { get; }
+        string SetCrsShiftRy { get; }
+        string SetCrsShiftRz { get; }
+        string SetCrsShiftScale { get; }
+        string SetCrsShiftPx { get; }
+        string SetCrsShiftPy { get; }
+        string SetCrsShiftPz { get; }
 
         // Projection Methods
         string PrjLambertConicConformal2SP { get; }
@@ -85,5 +108,41 @@
         string SftHelmert7Parameter { get; }
         string SftMolodenskyBadekas10Parameter { get; }
         string SftAbridgedMolodensky { get; }
+        string SftPositionVector { get; }
+        string SftCoordinateFrame { get; }
+
+        // DmsFormat
+        string FormatSimpleDMS { get; }
+
+        string FormatSimpleDM { get; }
+        string FormatSimpleD { get; }
+        string FormatVerboseDMS { get; }
+        string FormatVerboseDM { get; }
+        string FormatVerboseD { get; }
+        string FormatSimpleR { get; }
+        string FormatEsriDMS { get; }
+        string FormatEsriDM { get; }
+        string FormatEsriD { get; }
+        string FormatEsriPackedDMS { get; }
+        string FormatUkooaDMS { get; }
+        string FormatNMEA { get; }
+        string FormatSpacedDMS { get; }
+        string FormatSpacedDM { get; }
+
+        // DmsSign
+        string DmsSignPlusMinus { get; }
+
+        string DmsSignPrefix { get; }
+        string DmsSignSuffix { get; }
+        string DmsSignGeneric { get; }
+
+        // MetricSign
+        string MetricSignNumber { get; }
+
+        string MetricSignUnit { get; }
+        string MetricSignPrefix { get; }
+        string MetricSignSuffix { get; }
+        string MetricSignUnitPrefix { get; }
+        string MetricSignUnitSuffix { get; }
     }
 }

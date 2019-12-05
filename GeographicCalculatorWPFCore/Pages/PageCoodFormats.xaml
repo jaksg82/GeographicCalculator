@@ -1,0 +1,163 @@
+﻿<Page
+    x:Class="GeographicCalculatorWPFCore.Pages.PageCoodFormats"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:GeographicCalculatorWPFCore.Pages"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="PageCoodFormats"
+    d:DesignHeight="450"
+    d:DesignWidth="500"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <ResourceDictionary Source="../BaseStyles.xaml" />
+    </Page.Resources>
+
+    <Grid>
+        <Border x:Name="PanelSettings" Style="{DynamicResource MainBorder}">
+
+            <Grid x:Name="GrdMenuSettings" Margin="12">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <StackPanel
+                    Grid.Row="0"
+                    Grid.Column="1"
+                    HorizontalAlignment="Right"
+                    Orientation="Horizontal">
+                    <Button
+                        x:Name="BtnApplySettings"
+                        Click="ApplyButton_Click"
+                        Content="&#x1F5F8;"
+                        Style="{DynamicResource SetButton}" />
+                    <Button
+                        x:Name="BtnCloseSettings"
+                        Click="CloseButton_Click"
+                        Content="&#x1F5F4;"
+                        Style="{DynamicResource SetButton}" />
+                </StackPanel>
+                <TextBlock
+                    x:Name="TxbSetGeoFormat"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Style="{DynamicResource InOutTitle}"
+                    Text="Geo Format:" />
+                <ComboBox
+                    x:Name="CmbSetGeoFormat"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    SelectionChanged="CmbSetGeoFormat_SelectionChanged"
+                    Style="{DynamicResource SettingSelection}" />
+                <TextBlock
+                    x:Name="TxbSetGeoSign"
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    Style="{DynamicResource InOutTitle}"
+                    Text="Geo Sign:" />
+                <ComboBox
+                    x:Name="CmbSetGeoSign"
+                    Grid.Row="2"
+                    Grid.Column="1"
+                    SelectionChanged="CmbSetGeoSign_SelectionChanged"
+                    Style="{DynamicResource SettingSelection}" />
+                <TextBlock
+                    x:Name="TxbSetGeoDecimals"
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    Style="{DynamicResource InOutTitle}"
+                    Text="Geo Decimals:" />
+                <ComboBox
+                    x:Name="CmbSetGeoDecimals"
+                    Grid.Row="3"
+                    Grid.Column="1"
+                    SelectionChanged="CmbSetGeoDecimals_SelectionChanged"
+                    Style="{DynamicResource SettingSelection}">
+                    <ComboBoxItem Content="0" />
+                    <ComboBoxItem Content="0.1" />
+                    <ComboBoxItem Content="0.12" />
+                    <ComboBoxItem Content="0.123" />
+                    <ComboBoxItem Content="0.1234" />
+                    <ComboBoxItem Content="0.12345" />
+                    <ComboBoxItem Content="0.123456" />
+                    <ComboBoxItem Content="0.1234567" />
+                    <ComboBoxItem Content="0.12345678" />
+                    <ComboBoxItem Content="0.123456789" />
+                </ComboBox>
+
+                <TextBlock
+                    x:Name="TxbSetGeoResultTitle"
+                    Grid.Row="4"
+                    Grid.Column="0"
+                    Style="{DynamicResource InOutTitle}"
+                    Text="Example:" />
+                <TextBlock
+                    x:Name="TxbSetGeoResultValue"
+                    Grid.Row="4"
+                    Grid.Column="1"
+                    Style="{DynamicResource InOutValue}"
+                    Text="000:00:00.0000E" />
+
+                <TextBlock
+                    x:Name="TxbSetPrjFormat"
+                    Grid.Row="5"
+                    Grid.Column="0"
+                    Style="{DynamicResource InOutTitle}"
+                    Text="Prj Format:" />
+                <ComboBox
+                    x:Name="CmbSetPrjFormat"
+                    Grid.Row="5"
+                    Grid.Column="1"
+                    SelectionChanged="CmbSetPrjFormat_SelectionChanged"
+                    Style="{DynamicResource SettingSelection}" />
+                <TextBlock
+                    x:Name="TxbSetPrjDecimals"
+                    Grid.Row="6"
+                    Grid.Column="0"
+                    Style="{DynamicResource InOutTitle}"
+                    Text="Prj Decimals:" />
+                <ComboBox
+                    x:Name="CmbSetPrjDecimals"
+                    Grid.Row="6"
+                    Grid.Column="1"
+                    SelectionChanged="CmbSetPrjDecimals_SelectionChanged"
+                    Style="{DynamicResource SettingSelection}">
+                    <ComboBoxItem Content="0" />
+                    <ComboBoxItem Content="0.1" />
+                    <ComboBoxItem Content="0.12" />
+                    <ComboBoxItem Content="0.123" />
+                    <ComboBoxItem Content="0.1234" />
+                    <ComboBoxItem Content="0.12345" />
+                    <ComboBoxItem Content="0.123456" />
+                    <ComboBoxItem Content="0.1234567" />
+                    <ComboBoxItem Content="0.12345678" />
+                    <ComboBoxItem Content="0.123456789" />
+                </ComboBox>
+
+                <TextBlock
+                    x:Name="TxbSetPrjResultTitle"
+                    Grid.Row="7"
+                    Grid.Column="0"
+                    Style="{DynamicResource InOutTitle}"
+                    Text="Example:" />
+                <TextBlock
+                    x:Name="TxbSetPrjResultValue"
+                    Grid.Row="7"
+                    Grid.Column="1"
+                    Style="{DynamicResource InOutValue}"
+                    Text="500000.000E" />
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

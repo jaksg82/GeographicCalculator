@@ -15,6 +15,7 @@ namespace GeographicCalculatorWPFCore.Statics
         public static double HalfFontSize { get; set; }
         public static double AppMinHeight { get; set; }
         public static double AppMinWidth { get; set; }
+        public static double SettingWidth { get; set; }
 
         static DefaultValues()
         {
@@ -23,8 +24,9 @@ namespace GeographicCalculatorWPFCore.Statics
             BaseIconSize = 24.0;
             TitleFontSize = 16.0;
             HalfFontSize = BaseFontSize / 2;
-            AppMinHeight = BaseButtonSize * 6;
-            AppMinWidth = BaseButtonSize * 7;
+            AppMinHeight = BaseButtonSize * 8;
+            AppMinWidth = BaseButtonSize * 8;
+            SettingWidth = BaseButtonSize * 6;
         }
     }
 }

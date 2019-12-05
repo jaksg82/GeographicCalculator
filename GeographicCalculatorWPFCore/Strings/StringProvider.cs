@@ -7,12 +7,14 @@ namespace GeographicCalculatorWPFCore.Strings
     {
         #region Public properties
 
-        // Generic Strings
+        // Generic Strings //
         public string AppTitle { get; set; }
 
         public string NotDefined { get; set; }
+        public string BtnApply { get; set; }
+        public string BtnCancel { get; set; }
 
-        // UI Main Single Point
+        // UI Main Single Point //
         public string TxbGeoTitle { get; set; }
 
         public string TxbGeoLatTitle { get; set; }
@@ -29,13 +31,34 @@ namespace GeographicCalculatorWPFCore.Strings
         public string CrsEllName { get; set; }
         public string CrsShiftName { get; set; }
 
-        // Panel Settings
+        // Panel Settings //
         public string TxbSetGeoFormat { get; set; }
 
         public string TxbSetGeoSign { get; set; }
         public string TxbSetGeoDecimals { get; set; }
         public string TxbSetPrjFormat { get; set; }
         public string TxbSetPrjDecimals { get; set; }
+        public string SetCrsPrj { get; set; }
+        public string SetCrsEll { get; set; }
+        public string SetCrsTrans { get; set; }
+        public string SetCrsPrjFullName { get; set; }
+        public string SetCrsPrjShortName { get; set; }
+        public string SetCrsPrjMethod { get; set; }
+        public string SetCrsEllEpsgId { get; set; }
+        public string SetCrsEllFullName { get; set; }
+        public string SetCrsEllSmAxis { get; set; }
+        public string SetCrsEllInvFlatt { get; set; }
+        public string SetCrsShiftMethod { get; set; }
+        public string SetCrsShiftDx { get; set; }
+        public string SetCrsShiftDy { get; set; }
+        public string SetCrsShiftDz { get; set; }
+        public string SetCrsShiftRx { get; set; }
+        public string SetCrsShiftRy { get; set; }
+        public string SetCrsShiftRz { get; set; }
+        public string SetCrsShiftScale { get; set; }
+        public string SetCrsShiftPx { get; set; }
+        public string SetCrsShiftPy { get; set; }
+        public string SetCrsShiftPz { get; set; }
 
         // Projection Methods
         public string PrjLambertConicConformal2SP { get; set; }
@@ -90,6 +113,42 @@ namespace GeographicCalculatorWPFCore.Strings
         public string SftHelmert7Parameter { get; set; }
         public string SftMolodenskyBadekas10Parameter { get; set; }
         public string SftAbridgedMolodensky { get; set; }
+        public string SftPositionVector { get; set; }
+        public string SftCoordinateFrame { get; set; }
+
+        // DmsFormat
+        public string FormatSimpleDMS { get; set; }
+
+        public string FormatSimpleDM { get; set; }
+        public string FormatSimpleD { get; set; }
+        public string FormatVerboseDMS { get; set; }
+        public string FormatVerboseDM { get; set; }
+        public string FormatVerboseD { get; set; }
+        public string FormatSimpleR { get; set; }
+        public string FormatEsriDMS { get; set; }
+        public string FormatEsriDM { get; set; }
+        public string FormatEsriD { get; set; }
+        public string FormatEsriPackedDMS { get; set; }
+        public string FormatUkooaDMS { get; set; }
+        public string FormatNMEA { get; set; }
+        public string FormatSpacedDMS { get; set; }
+        public string FormatSpacedDM { get; set; }
+
+        // DmsSign
+        public string DmsSignPlusMinus { get; set; }
+
+        public string DmsSignPrefix { get; set; }
+        public string DmsSignSuffix { get; set; }
+        public string DmsSignGeneric { get; set; }
+
+        // MetricSign
+        public string MetricSignNumber { get; set; }
+
+        public string MetricSignUnit { get; set; }
+        public string MetricSignPrefix { get; set; }
+        public string MetricSignSuffix { get; set; }
+        public string MetricSignUnitPrefix { get; set; }
+        public string MetricSignUnitSuffix { get; set; }
 
         #endregion Public properties
 
@@ -126,10 +185,12 @@ namespace GeographicCalculatorWPFCore.Strings
                 };
             }
 
-            // Generic Strings
+            // Generic Strings //
             AppTitle = locStrings.AppTitle;
             NotDefined = locStrings.NotDefined;
-            // UI Main Single Point
+            BtnApply = locStrings.BtnApply;
+            BtnCancel = locStrings.BtnCancel;
+            // UI Main Single Point //
             TxbGeoTitle = locStrings.TxbGeoTitle;
             TxbGeoLatTitle = locStrings.TxbGeoLatTitle;
             TxbGeoLonTitle = locStrings.TxbGeoLonTitle;
@@ -144,13 +205,33 @@ namespace GeographicCalculatorWPFCore.Strings
             CrsPrjType = locStrings.CrsPrjType;
             CrsEllName = locStrings.CrsEllName;
             CrsShiftName = locStrings.CrsShiftName;
-
-            // Panel Settings
+            // Panel Settings //
             TxbSetGeoFormat = locStrings.TxbSetGeoFormat;
             TxbSetGeoSign = locStrings.TxbSetGeoSign;
             TxbSetGeoDecimals = locStrings.TxbSetGeoDecimals;
             TxbSetPrjFormat = locStrings.TxbSetPrjFormat;
             TxbSetPrjDecimals = locStrings.TxbSetPrjDecimals;
+            SetCrsPrj = locStrings.SetCrsPrj;
+            SetCrsEll = locStrings.SetCrsEll;
+            SetCrsTrans = locStrings.SetCrsTrans;
+            SetCrsPrjFullName = locStrings.SetCrsPrjFullName;
+            SetCrsPrjShortName = locStrings.SetCrsPrjShortName;
+            SetCrsPrjMethod = locStrings.SetCrsPrjMethod;
+            SetCrsEllEpsgId = locStrings.SetCrsEllEpsgId;
+            SetCrsEllFullName = locStrings.SetCrsEllFullName;
+            SetCrsEllSmAxis = locStrings.SetCrsEllSmAxis;
+            SetCrsEllInvFlatt = locStrings.SetCrsEllInvFlatt;
+            SetCrsShiftMethod = locStrings.SetCrsShiftMethod;
+            SetCrsShiftDx = locStrings.SetCrsShiftDx;
+            SetCrsShiftDy = locStrings.SetCrsShiftDy;
+            SetCrsShiftDz = locStrings.SetCrsShiftDz;
+            SetCrsShiftRx = locStrings.SetCrsShiftRx;
+            SetCrsShiftRy = locStrings.SetCrsShiftRy;
+            SetCrsShiftRz = locStrings.SetCrsShiftRz;
+            SetCrsShiftScale = locStrings.SetCrsShiftScale;
+            SetCrsShiftPx = locStrings.SetCrsShiftPx;
+            SetCrsShiftPy = locStrings.SetCrsShiftPy;
+            SetCrsShiftPz = locStrings.SetCrsShiftPz;
 
             // Projection Methods
             PrjLambertConicConformal2SP = locStrings.PrjLambertConicConformal2SP;
@@ -202,6 +283,37 @@ namespace GeographicCalculatorWPFCore.Strings
             SftHelmert7Parameter = locStrings.SftHelmert7Parameter;
             SftMolodenskyBadekas10Parameter = locStrings.SftMolodenskyBadekas10Parameter;
             SftAbridgedMolodensky = locStrings.SftAbridgedMolodensky;
+            SftPositionVector = locStrings.SftPositionVector;
+            SftCoordinateFrame = locStrings.SftCoordinateFrame;
+
+            // DmsFormat
+            FormatSimpleDMS = locStrings.FormatSimpleDMS;
+            FormatSimpleDM = locStrings.FormatSimpleDM;
+            FormatSimpleD = locStrings.FormatSimpleD;
+            FormatVerboseDMS = locStrings.FormatVerboseDMS;
+            FormatVerboseDM = locStrings.FormatVerboseDM;
+            FormatVerboseD = locStrings.FormatVerboseD;
+            FormatSimpleR = locStrings.FormatSimpleR;
+            FormatEsriDMS = locStrings.FormatEsriDMS;
+            FormatEsriDM = locStrings.FormatEsriDM;
+            FormatEsriD = locStrings.FormatEsriD;
+            FormatEsriPackedDMS = locStrings.FormatEsriPackedDMS;
+            FormatUkooaDMS = locStrings.FormatUkooaDMS;
+            FormatNMEA = locStrings.FormatNMEA;
+            FormatSpacedDMS = locStrings.FormatSpacedDMS;
+            FormatSpacedDM = locStrings.FormatSpacedDM;
+            // DmsSign
+            DmsSignPlusMinus = locStrings.DmsSignPlusMinus;
+            DmsSignPrefix = locStrings.DmsSignPrefix;
+            DmsSignSuffix = locStrings.DmsSignSuffix;
+            DmsSignGeneric = locStrings.DmsSignGeneric;
+            // MetricSign
+            MetricSignNumber = locStrings.MetricSignNumber;
+            MetricSignUnit = locStrings.MetricSignUnit;
+            MetricSignPrefix = locStrings.MetricSignPrefix;
+            MetricSignSuffix = locStrings.MetricSignSuffix;
+            MetricSignUnitPrefix = locStrings.MetricSignUnitPrefix;
+            MetricSignUnitSuffix = locStrings.MetricSignUnitSuffix;
         }
 
         #endregion private Methods

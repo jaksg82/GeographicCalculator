@@ -29,6 +29,12 @@
         <Setter Property="Foreground" Value="{DynamicResource ForegroundSolidColor}" />
         <Setter Property="BorderBrush" Value="{x:Null}" />
     </Style>
+    <Style
+        x:Key="SetSectionButton"
+        BasedOn="{StaticResource SetButton}"
+        TargetType="Button">
+        <Setter Property="Width" Value="Auto" />
+    </Style>
 
     <!--  TextBlock Styles  -->
     <Style x:Key="CrsTitle" TargetType="TextBlock">
@@ -51,7 +57,7 @@
         <Setter Property="FontWeight" Value="Bold" />
         <Setter Property="HorizontalAlignment" Value="Right" />
         <Setter Property="VerticalAlignment" Value="Center" />
-        <Setter Property="Margin" Value="6,0" />
+        <Setter Property="Margin" Value="6,3" />
         <Setter Property="Foreground" Value="{DynamicResource ForegroundSolidColor}" />
     </Style>
     <Style
@@ -76,6 +82,15 @@
     <Style x:Key="MainBorder" TargetType="Border">
         <Setter Property="BorderBrush" Value="{DynamicResource ButtonBackgroundSolidColor}" />
         <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Background" Value="{DynamicResource BackgroundSolidColor}" />
+    </Style>
+    <Style x:Key="SettingBorder" TargetType="Border">
+        <Setter Property="BorderBrush" Value="{DynamicResource ButtonBackgroundSolidColor}" />
+        <Setter Property="Background" Value="{DynamicResource ButtonBackgroundSolidColor}" />
+        <Setter Property="Width" Value="{x:Static s:DefaultValues.SettingWidth}" />
+        <Setter Property="BorderThickness" Value="0" />
+        <Setter Property="Margin" Value="0" />
+        <Setter Property="HorizontalAlignment" Value="Left" />
     </Style>
 
     <!--  Combobox Styles  -->

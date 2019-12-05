@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29418.71
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeographicCalculator_WPF_Core", "GeographicCalculator_WPF_Core\GeographicCalculator_WPF_Core.csproj", "{9BC68C55-D438-4A83-BD12-2DA64D3D6ED0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeographicCalculatorWPFCore", "GeographicCalculatorWPFCore\GeographicCalculatorWPFCore.csproj", "{9BC68C55-D438-4A83-BD12-2DA64D3D6ED0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
