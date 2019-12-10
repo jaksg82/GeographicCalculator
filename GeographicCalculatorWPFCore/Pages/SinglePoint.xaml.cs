@@ -22,7 +22,7 @@ namespace GeographicCalculatorWPFCore.Pages
     /// <summary>
     /// Logica di interazione per PageSinglePoint.xaml
     /// </summary>
-    public partial class PageSinglePoint : Page
+    public partial class SinglePoint : Page
     {
         #region Private Variables
 
@@ -38,7 +38,7 @@ namespace GeographicCalculatorWPFCore.Pages
 
         #region Constructors
 
-        public PageSinglePoint()
+        public SinglePoint()
         {
             InitializeComponent();
             UIStrings = new StringProvider(Thread.CurrentThread.CurrentUICulture);
@@ -58,7 +58,7 @@ namespace GeographicCalculatorWPFCore.Pages
             UpdatePoints(true);
         }
 
-        public PageSinglePoint(Projections CrsIn, Projections CrsOut, CoordSettings Settings)
+        public SinglePoint(Projections CrsIn, Projections CrsOut, CoordSettings Settings)
         {
             InitializeComponent();
             UIStrings = new StringProvider(Thread.CurrentThread.CurrentUICulture);
@@ -77,7 +77,7 @@ namespace GeographicCalculatorWPFCore.Pages
             UpdatePoints(true);
         }
 
-        public PageSinglePoint(Projections CrsIn, Projections CrsOut, CoordSettings Settings, Point3D LLPoint)
+        public SinglePoint(Projections CrsIn, Projections CrsOut, CoordSettings Settings, Point3D LLPoint)
         {
             InitializeComponent();
             UIStrings = new StringProvider(Thread.CurrentThread.CurrentUICulture);

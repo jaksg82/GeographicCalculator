@@ -21,7 +21,7 @@ namespace GeographicCalculatorWPFCore.Pages
     /// <summary>
     /// Logica di interazione per PageCoodFormats.xaml
     /// </summary>
-    public partial class PageCoodFormats : Page
+    public partial class CoodFormats : Page
     {
         #region Private Variables
 
@@ -34,7 +34,7 @@ namespace GeographicCalculatorWPFCore.Pages
 
         #region Constructors
 
-        public PageCoodFormats()
+        public CoodFormats()
         {
             InitializeComponent();
             UIStrings = new StringProvider(Thread.CurrentThread.CurrentUICulture);
@@ -47,7 +47,7 @@ namespace GeographicCalculatorWPFCore.Pages
             ApplyCoordSettings();
         }
 
-        public PageCoodFormats(CoordSettings InSettings)
+        public CoodFormats(CoordSettings InSettings)
         {
             InitializeComponent();
             UIStrings = new StringProvider(Thread.CurrentThread.CurrentUICulture);
@@ -60,7 +60,7 @@ namespace GeographicCalculatorWPFCore.Pages
             ApplyCoordSettings();
         }
 
-        public PageCoodFormats(CoordSettings InSettings, Point3D llpoint, Point3D mpoint)
+        public CoodFormats(CoordSettings InSettings, Point3D llpoint, Point3D mpoint)
         {
             InitializeComponent();
             UIStrings = new StringProvider(Thread.CurrentThread.CurrentUICulture);
