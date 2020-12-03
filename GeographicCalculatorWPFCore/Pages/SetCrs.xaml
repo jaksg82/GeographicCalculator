@@ -3,6 +3,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:gcw="clr-namespace:GeographicCalculatorWPFCore"
     xmlns:local="clr-namespace:GeographicCalculatorWPFCore.Pages"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Title="SetCrs"
@@ -14,55 +15,90 @@
     </Page.Resources>
 
     <Grid>
-        <Border x:Name="PanelCrsInput" Style="{DynamicResource MainBorder}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!--  Apply and Cancel Buttons  -->
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Button
+                x:Name="BtnBack"
+                Click="BtnCancelCrs_Click"
+                Content="Back"
+                Style="{DynamicResource SetButton}" />
+            <Button
+                x:Name="BtnApply"
+                Click="BtnApplyCrs_Click"
+                Content="Apply"
+                Style="{DynamicResource SetButton}" />
+        </StackPanel>
+
+        <!--  Setting Tabs  -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Button
+                x:Name="BtnSetCrsInPrj1"
+                Grid.Column="0"
+                Click="BtnSetCrsInPrj_Click"
+                Content="Projection"
+                Style="{DynamicResource SetSectionButton}" />
+            <Button
+                x:Name="BtnSetCrsInEll1"
+                Grid.Column="1"
+                Click="BtnSetCrsInPrj_Click"
+                Content="Ellipsoid"
+                Style="{DynamicResource SetSectionButton}" />
+            <Button
+                x:Name="BtnSetCrsInTrans1"
+                Grid.Column="2"
+                Click="BtnSetCrsInPrj_Click"
+                Content="Transformation"
+                Style="{DynamicResource SetSectionButton}" />
+        </Grid>
+
+        <!--  Projection Settings  -->
+        <StackPanel Grid.Row="2" Orientation="Vertical">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <TextBlock
+                    x:Name="TxbFullNameTitle"
+                    Grid.Column="0"
+                    Style="{DynamicResource InOutTitle}"
+                    Text="Full Name:" />
+                <TextBox
+                    x:Name="TxtFullName"
+                    Grid.Column="1"
+                    Style="{DynamicResource InOutEditableValue}"
+                    Text="xxxx"
+                    TextAlignment="Left" />
+            </Grid>
+            <gcw:StyledTitleValue
+                x:Name="PrjFullName"
+                TitleString="Full Name:"
+                TitleStyle="{DynamicResource InOutTitle}"
+                ValueString="xxxxxx"
+                ValueStyle="{DynamicResource InOutEditableValue}" />
+        </StackPanel>
+
+        <Border x:Name="PanelCrsInput" Grid.Row="3">
 
             <StackPanel
                 x:Name="GrdMenuCrsInput"
                 Margin="12"
                 CanVerticallyScroll="True"
                 ScrollViewer.CanContentScroll="True">
-                <!--  Apply and Cancel Buttons  -->
-                <StackPanel
-                    Grid.Row="0"
-                    Grid.Column="1"
-                    HorizontalAlignment="Right"
-                    Orientation="Horizontal">
-                    <Button
-                        x:Name="BtnApplyCrsInput"
-                        Grid.Row="0"
-                        Grid.Column="1"
-                        HorizontalAlignment="Right"
-                        Click="BtnApplyCrs_Click"
-                        Content="&#x1F5F8;"
-                        Style="{DynamicResource SetButton}" />
-                    <Button
-                        x:Name="BtnCloseCrsInput"
-                        Grid.Row="0"
-                        Grid.Column="1"
-                        HorizontalAlignment="Right"
-                        Click="BtnCancelCrs_Click"
-                        Content="&#x1F5F4;"
-                        Style="{DynamicResource SetButton}" />
-                </StackPanel>
+
                 <!--  Projection Settings  -->
-                <Grid Grid.Row="1">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="Auto" />
-                    </Grid.ColumnDefinitions>
-                    <Button
-                        x:Name="BtnSetCrsInPrj1"
-                        Grid.Column="0"
-                        Click="BtnSetCrsInPrj_Click"
-                        Content="Projection"
-                        Style="{DynamicResource SetSectionButton}" />
-                    <Button
-                        x:Name="BtnSetCrsInPrj2"
-                        Grid.Column="1"
-                        Click="BtnSetCrsInPrj_Click"
-                        Content="&#x1F53A;"
-                        Style="{DynamicResource SetButton}" />
-                </Grid>
                 <Grid
                     x:Name="GrdSetCrsInPrj"
                     Grid.Row="2"
@@ -88,19 +124,6 @@
                         <RowDefinition Height="*" />
                     </Grid.RowDefinitions>
 
-                    <TextBlock
-                        x:Name="TxbFullNameTitle"
-                        Grid.Row="0"
-                        Grid.Column="0"
-                        Style="{DynamicResource InOutTitle}"
-                        Text="Full Name:" />
-                    <TextBox
-                        x:Name="TxtFullName"
-                        Grid.Row="0"
-                        Grid.Column="1"
-                        Style="{DynamicResource InOutEditableValue}"
-                        Text="xxxx"
-                        TextAlignment="Left" />
                     <TextBlock
                         x:Name="TxbShortNameTitle"
                         Grid.Row="1"
@@ -226,24 +249,6 @@
                 </Grid>
 
                 <!--  Ellipsoid Settings  -->
-                <Grid Grid.Row="3">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="Auto" />
-                    </Grid.ColumnDefinitions>
-                    <Button
-                        x:Name="BtnSetCrsInEll1"
-                        Grid.Column="0"
-                        Click="BtnSetCrsInPrj_Click"
-                        Content="Ellipsoid"
-                        Style="{DynamicResource SetSectionButton}" />
-                    <Button
-                        x:Name="BtnSetCrsInEll2"
-                        Grid.Column="1"
-                        Click="BtnSetCrsInPrj_Click"
-                        Content="&#x1F53B;"
-                        Style="{DynamicResource SetButton}" />
-                </Grid>
                 <Grid
                     x:Name="GrdSetCrsInEll"
                     Grid.Row="4"
@@ -319,24 +324,6 @@
                 </Grid>
 
                 <!--  Transformation Settings  -->
-                <Grid Grid.Row="5">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition Width="Auto" />
-                    </Grid.ColumnDefinitions>
-                    <Button
-                        x:Name="BtnSetCrsInTrans1"
-                        Grid.Column="0"
-                        Click="BtnSetCrsInPrj_Click"
-                        Content="Transformation"
-                        Style="{DynamicResource SetSectionButton}" />
-                    <Button
-                        x:Name="BtnSetCrsInTrans2"
-                        Grid.Column="1"
-                        Click="BtnSetCrsInPrj_Click"
-                        Content="&#x1F53B;"
-                        Style="{DynamicResource SetButton}" />
-                </Grid>
                 <Grid
                     x:Name="GrdSetCrsInTrans"
                     Grid.Row="6"

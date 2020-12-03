@@ -55,17 +55,14 @@ namespace GeographicCalculatorWPFCore.Pages
 
         private void BtnSetCrsInPrj_Click(object sender, RoutedEventArgs e)
         {
-            string btnClose = "\U0001F53A;";
-            string btnOpen = "\U0001F53B;";
+            //string btnClose = "\U0001F53A;";
+            //string btnOpen = "\U0001F53B;";
             if (sender.GetType() == typeof(Button))
             {
                 Button btnSender = (Button)sender;
                 GrdSetCrsInPrj.Visibility = Visibility.Collapsed;
-                BtnSetCrsInPrj2.Content = btnClose;
                 GrdSetCrsInEll.Visibility = Visibility.Collapsed;
-                BtnSetCrsInEll2.Content = btnClose;
                 GrdSetCrsInTrans.Visibility = Visibility.Collapsed;
-                BtnSetCrsInTrans2.Content = btnClose;
 
                 switch (btnSender.Name)
                 {
@@ -74,11 +71,8 @@ namespace GeographicCalculatorWPFCore.Pages
                         if (GrdSetCrsInPrj.Visibility == Visibility.Collapsed)
                         {
                             GrdSetCrsInPrj.Visibility = Visibility.Visible;
-                            BtnSetCrsInPrj2.Content = btnOpen;
                             GrdSetCrsInEll.Visibility = Visibility.Collapsed;
-                            BtnSetCrsInEll2.Content = btnClose;
                             GrdSetCrsInTrans.Visibility = Visibility.Collapsed;
-                            BtnSetCrsInTrans2.Content = btnClose;
                         }
                         break;
 
@@ -87,11 +81,8 @@ namespace GeographicCalculatorWPFCore.Pages
                         if (GrdSetCrsInEll.Visibility == Visibility.Collapsed)
                         {
                             GrdSetCrsInPrj.Visibility = Visibility.Collapsed;
-                            BtnSetCrsInPrj2.Content = btnClose;
                             GrdSetCrsInEll.Visibility = Visibility.Visible;
-                            BtnSetCrsInEll2.Content = btnOpen;
                             GrdSetCrsInTrans.Visibility = Visibility.Collapsed;
-                            BtnSetCrsInTrans2.Content = btnClose;
                         }
                         break;
 
@@ -100,11 +91,8 @@ namespace GeographicCalculatorWPFCore.Pages
                         if (GrdSetCrsInEll.Visibility == Visibility.Collapsed)
                         {
                             GrdSetCrsInPrj.Visibility = Visibility.Collapsed;
-                            BtnSetCrsInPrj2.Content = btnClose;
                             GrdSetCrsInEll.Visibility = Visibility.Collapsed;
-                            BtnSetCrsInEll2.Content = btnClose;
                             GrdSetCrsInTrans.Visibility = Visibility.Visible;
-                            BtnSetCrsInTrans2.Content = btnOpen;
                         }
                         break;
                 }

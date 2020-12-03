@@ -21,19 +21,23 @@
         <Setter Property="BorderThickness" Value="1" />
     </Style>
     <Style x:Key="SetButton" TargetType="Button">
-        <Setter Property="Height" Value="{x:Static s:DefaultValues.BaseIconSize}" />
-        <Setter Property="Width" Value="{x:Static s:DefaultValues.BaseIconSize}" />
+        <Setter Property="Height" Value="{x:Static s:DefaultValues.BaseButtonSize}" />
+        <Setter Property="Width" Value="Auto" />
         <Setter Property="FontFamily" Value="{DynamicResource SymbolFontFamily}" />
         <Setter Property="FontSize" Value="{x:Static s:DefaultValues.TitleFontSize}" />
         <Setter Property="Background" Value="{DynamicResource ButtonBackgroundSolidColor}" />
         <Setter Property="Foreground" Value="{DynamicResource ForegroundSolidColor}" />
         <Setter Property="BorderBrush" Value="{x:Null}" />
+        <Setter Property="Padding" Value="6,0" />
     </Style>
-    <Style
-        x:Key="SetSectionButton"
-        BasedOn="{StaticResource SetButton}"
-        TargetType="Button">
+    <Style x:Key="SetSectionButton" TargetType="Button">
+        <Setter Property="Height" Value="{x:Static s:DefaultValues.BaseIconSize}" />
         <Setter Property="Width" Value="Auto" />
+        <Setter Property="FontFamily" Value="{DynamicResource SymbolFontFamily}" />
+        <Setter Property="FontSize" Value="{x:Static s:DefaultValues.TitleFontSize}" />
+        <Setter Property="Background" Value="{DynamicResource ButtonBackgroundSolidColor}" />
+        <Setter Property="Foreground" Value="{DynamicResource ForegroundSolidColor}" />
+        <Setter Property="BorderBrush" Value="{x:Null}" />
     </Style>
 
     <!--  TextBlock Styles  -->
